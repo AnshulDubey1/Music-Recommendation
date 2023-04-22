@@ -4,7 +4,7 @@ import sys
 from pymongo import MongoClient
 import certifi
 import pandas as pd
-
+import numpy 
 def read_mongodb(connection):
     try:
         client= MongoClient(connection,tlsCAFile=certifi.where())
@@ -17,3 +17,11 @@ def read_mongodb(connection):
         return df
     except Exception as E:
         raise CustomException(E,sys)
+def normalize(x):
+    try:
+        y = (x - np.mean(x))
+        y/=np.std(x)
+        return y
+        except Exception as E:
+        raise CustomException(E,sys)
+    
