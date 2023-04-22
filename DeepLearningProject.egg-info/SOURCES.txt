@@ -1,10 +1,15 @@
+LICENSE
 README.md
 setup.py
 DeepLearningProject.egg-info/PKG-INFO
 DeepLearningProject.egg-info/SOURCES.txt
 DeepLearningProject.egg-info/dependency_links.txt
 DeepLearningProject.egg-info/top_level.txt
+artifacts/__init__.py
 src/__init__.py
 src/exception.py
 src/logger.py
 src/utils.py
+src/pipeline/__init__.py
+src/pipeline/predict_pipeline.py
+src/pipeline/song_predictor.py

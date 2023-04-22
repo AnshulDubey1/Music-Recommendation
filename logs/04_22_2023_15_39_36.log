@@ -1,0 +1,9 @@
+[2023-04-22 15:39:39,239] 23 root - INFO - Entered data ingestion method or component
+[2023-04-22 15:40:05,127] 26 root - INFO - Read the dataset
+[2023-04-22 15:40:09,032] 29 root - INFO - Train test split initiated
+[2023-04-22 15:40:13,383] 33 root - INFO - Ingestion of the data is completed
+[2023-04-22 15:40:14,473] 52 root - INFO - Read train and test data completed
+[2023-04-22 15:40:14,473] 54 root - INFO - Obtaining preprocessing object
+[2023-04-22 15:40:14,473] 37 root - INFO - Read and transformed the relevant data
+[2023-04-22 15:40:14,473] 58 root - INFO - Applying preprocessing object on training dataframe and testing dataframe.
+[2023-04-22 15:40:14,578] 71 root - INFO - Saved preprocessing object
