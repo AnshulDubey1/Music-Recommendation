@@ -50,10 +50,9 @@ def recommender(emotion):
         track1 = sp.track(string(random_row1))
         track2 = sp.track(string(random_row2))
         if emotion==1:
-            print("The recommended track name:",track1['name'],"and the artist name:",track1['artists'][0]['name'])
+            return("The recommended track name:",track1['name'],"and the artist name:",track1['artists'][0]['name'])
         else :
-            print("The recommended track name:",track2['name'],"and the artist name:",track2['artists'][0]['name'])
+            return("The recommended track name:",track2['name'],"and the artist name:",track2['artists'][0]['name'])
     except Exception as e:
         raise CustomException(e,sys)
-camera()
-recommender(emotion_average("src\pipeline\Registered_emotions.txt"))
+

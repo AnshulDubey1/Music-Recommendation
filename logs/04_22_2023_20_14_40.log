@@ -1,0 +1,11 @@
+[2023-04-22 20:14:41,529] 224 werkzeug - WARNING -  * Debugger is active!
+[2023-04-22 20:14:41,572] 224 werkzeug - INFO -  * Debugger PIN: 229-498-762
+[2023-04-22 20:14:50,561] 224 werkzeug - INFO - 127.0.0.1 - - [22/Apr/2023 20:14:50] "GET / HTTP/1.1" 200 -
+[2023-04-22 20:14:50,564] 224 werkzeug - INFO - 127.0.0.1 - - [22/Apr/2023 20:14:50] "GET / HTTP/1.1" 200 -
+[2023-04-22 20:14:50,568] 224 werkzeug - INFO - 127.0.0.1 - - [22/Apr/2023 20:14:50] "GET / HTTP/1.1" 200 -
+[2023-04-22 20:15:20,728] 224 werkzeug - INFO - 127.0.0.1 - - [22/Apr/2023 20:15:20] "[35m[1mGET /cam HTTP/1.1[0m" 500 -
+[2023-04-22 20:15:20,880] 224 werkzeug - INFO - 127.0.0.1 - - [22/Apr/2023 20:15:20] "[36mGET /cam?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2023-04-22 20:15:20,905] 224 werkzeug - INFO - 127.0.0.1 - - [22/Apr/2023 20:15:20] "[36mGET /cam?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2023-04-22 20:15:21,036] 224 werkzeug - INFO - 127.0.0.1 - - [22/Apr/2023 20:15:21] "[36mGET /cam?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2023-04-22 20:15:21,090] 224 werkzeug - INFO - 127.0.0.1 - - [22/Apr/2023 20:15:21] "[36mGET /cam?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2023-04-22 20:17:27,699] 224 werkzeug - INFO -  * Detected change in 'C:\\Users\\KIIT\\Documents\\GitHub\\Music-Recommendation\\application.py', reloading

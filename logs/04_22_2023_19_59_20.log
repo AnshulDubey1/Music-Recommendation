@@ -1,0 +1,10 @@
+[2023-04-22 19:59:20,959] 224 werkzeug - WARNING -  * Debugger is active!
+[2023-04-22 19:59:20,977] 224 werkzeug - INFO -  * Debugger PIN: 229-498-762
+[2023-04-22 19:59:25,626] 224 werkzeug - INFO - 127.0.0.1 - - [22/Apr/2023 19:59:25] "GET / HTTP/1.1" 200 -
+[2023-04-22 19:59:25,629] 224 werkzeug - INFO - 127.0.0.1 - - [22/Apr/2023 19:59:25] "GET / HTTP/1.1" 200 -
+[2023-04-22 20:00:01,234] 224 werkzeug - INFO - 127.0.0.1 - - [22/Apr/2023 20:00:01] "[35m[1mGET /cam HTTP/1.1[0m" 500 -
+[2023-04-22 20:00:18,720] 224 werkzeug - INFO - 127.0.0.1 - - [22/Apr/2023 20:00:18] "[35m[1mGET /cam HTTP/1.1[0m" 500 -
+[2023-04-22 20:00:18,827] 224 werkzeug - INFO - 127.0.0.1 - - [22/Apr/2023 20:00:18] "[36mGET /cam?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2023-04-22 20:00:18,838] 224 werkzeug - INFO - 127.0.0.1 - - [22/Apr/2023 20:00:18] "[36mGET /cam?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2023-04-22 20:00:18,894] 224 werkzeug - INFO - 127.0.0.1 - - [22/Apr/2023 20:00:18] "[36mGET /cam?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2023-04-22 20:00:18,961] 224 werkzeug - INFO - 127.0.0.1 - - [22/Apr/2023 20:00:18] "[36mGET /cam?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -

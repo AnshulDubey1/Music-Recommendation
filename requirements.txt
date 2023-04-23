@@ -9,4 +9,5 @@ pymongo
 ipykernel
 spotipy
 opencv-python
+flask
 -e .

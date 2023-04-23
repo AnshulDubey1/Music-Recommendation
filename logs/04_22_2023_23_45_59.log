@@ -1,0 +1,7 @@
+[2023-04-22 23:46:06,576] 224 werkzeug - WARNING -  * Debugger is active!
+[2023-04-22 23:46:06,583] 224 werkzeug - INFO -  * Debugger PIN: 229-498-762
+[2023-04-22 23:46:21,311] 224 werkzeug - INFO - 127.0.0.1 - - [22/Apr/2023 23:46:21] "GET / HTTP/1.1" 200 -
+[2023-04-22 23:46:30,817] 224 werkzeug - INFO - 127.0.0.1 - - [22/Apr/2023 23:46:30] "GET /cam HTTP/1.1" 200 -
+[2023-04-22 23:47:13,008] 224 werkzeug - INFO - 127.0.0.1 - - [22/Apr/2023 23:47:13] "[33mGET /cam_cam HTTP/1.1[0m" 404 -
+[2023-04-22 23:47:33,267] 224 werkzeug - INFO - 127.0.0.1 - - [22/Apr/2023 23:47:33] "GET /close_cam HTTP/1.1" 200 -
+[2023-04-22 23:48:41,550] 224 werkzeug - INFO -  * Detected change in 'c:\\users\\kiit\\documents\\github\\music-recommendation\\src\\pipeline\\song_predictor.py', reloading

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prediction Model Welcome Page</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #d3e8f0;
+			color: #333;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 100vh;
+		}
+		.container {
+			width: 90%;
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 30px;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+			text-align: center;
+		}
+		h1 {
+			font-size: 42px;
+			margin-bottom: 30px;
+			color: #0077cc;
+		}
+		p {
+			font-size: 20px;
+			line-height: 1.5;
+			margin-bottom: 30px;
+			color: #666;
+		}
+		button {
+			background-color: #0077cc;
+			color: #fff;
+			border: none;
+			padding: 12px 30px;
+			font-size: 20px;
+			cursor: pointer;
+			border-radius: 5px;
+			transition: background-color 0.3s ease-in-out;
+			box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+		}
+		button:hover {
+			background-color: #005ea6;
+		}
+		.feature-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-top: 50px;
+		}
+		.feature {
+			flex-basis: 300px;
+			margin: 10px;
+			padding: 10px 200px 10px 200px;		
+			background-color: #f8f8f8;
+			border-radius: 10px;
+			box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+			text-align: center;
+		}
+		.feature h2 {
+			font-size: 24px;
+			color: #0077cc;
+			margin-bottom: 10px;
+		}
+		.feature p {
+			font-size: 16px;
+			line-height: 1.5;
+			color: #666;
+			margin-bottom: 10px;
+		}
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #0077cc;
+            color: #fff;
+            font-size: 20px;
+        }
+        .menu-item {
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        .menu-item:hover {
+            text-decoration: underline;
+        }
+        .profile-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+		.logo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<nav>
+			<ul>
+				<button><a href="#">Home</a> </button>
+			</ul>
+		</nav>
+		<h1>Prediction Model Welcome Page</h1>
+		<p>Click the button below to make a prediction.</p>
+		<a href="#" class="button" id="learn-more-btn"><button>Predict</button></a>
+		<div class="feature-container">
+					<script>
+						// Get the current hostname and port
+						const host = window.location.hostname;
+						const port = window.location.port;
+				
+						// Construct the URL for the "Learn More" button
+						const url = `http://${host}:${port}/cam`;
+				
+						// Get a reference to the "Learn More" button
+						const learnMoreBtn = document.getElementById("learn-more-btn");
+				
+						// Set the button's URL
+						learnMoreBtn.href = url;
+					</script>

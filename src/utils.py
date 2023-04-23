@@ -63,6 +63,6 @@ def string(r):
 
         # print the extracted string
         return id_string
-    except Exception as E:
+    except Exception as e:
         raise CustomException(e,sys)
     
