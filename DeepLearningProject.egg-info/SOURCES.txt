@@ -11,5 +11,6 @@ src/exception.py
 src/logger.py
 src/utils.py
 src/pipeline/__init__.py
+src/pipeline/integration.py
 src/pipeline/predict_pipeline.py
 src/pipeline/song_predictor.py

@@ -25,11 +25,6 @@ def generate_frames():
     start_time = time.time()
     with app.app_context():  # Set up the application context
         while True:
-            elapsed_time = time.time() - start_time 
-            if elapsed_time > 15: # check if 10 seconds have elapsed
-                camera.release() # release the camera
-                cv2.destroyAllWindows() # close all open windows
-                break
 
             success, frame = camera.read()
             if not success:
@@ -62,7 +57,6 @@ def generate_frames():
                 frame = buffer.tobytes()
                 yield (b'--frame\r\n'
                     b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
-        return redirect(('http://127.0.0.1:8000/close_cam'))
    
 
 @app.route('/')
@@ -76,8 +70,7 @@ def execute_camera():
 @app.route('/close_cam')
 def close_camera():
     emotion=emotion_average("src\pipeline\Registered_emotions.txt")
-    return render_template('suggestion.html', songs=recommender(emotion))
+    return render_template('suggestion.html', songs=str(recommender(emotion)))
 
 if __name__ == "__main__":
-    
     app.run(host="0.0.0.0", port=8000, debug=True)

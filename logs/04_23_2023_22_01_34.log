@@ -1,0 +1,15 @@
+[2023-04-23 22:01:53,514] 224 werkzeug - WARNING -  * Debugger is active!
+[2023-04-23 22:01:53,520] 224 werkzeug - INFO -  * Debugger PIN: 229-498-762
+[2023-04-23 22:01:53,552] 224 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.5.172.143:8000
+[2023-04-23 22:01:53,552] 224 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2023-04-23 22:01:53,554] 224 werkzeug - INFO -  * Restarting with stat
+[2023-04-23 22:02:26,333] 224 werkzeug - INFO - 127.0.0.1 - - [23/Apr/2023 22:02:26] "GET / HTTP/1.1" 200 -
+[2023-04-23 22:02:27,824] 224 werkzeug - INFO - 127.0.0.1 - - [23/Apr/2023 22:02:27] "GET /cam HTTP/1.1" 200 -
+[2023-04-23 22:02:55,016] 224 werkzeug - INFO - 127.0.0.1 - - [23/Apr/2023 22:02:55] "GET /close_cam HTTP/1.1" 200 -
+[2023-04-23 22:03:51,799] 224 werkzeug - INFO - 127.0.0.1 - - [23/Apr/2023 22:03:51] "GET / HTTP/1.1" 200 -
+[2023-04-23 22:03:52,200] 224 werkzeug - INFO - 127.0.0.1 - - [23/Apr/2023 22:03:52] "GET /cam HTTP/1.1" 200 -
+[2023-04-23 22:05:26,698] 224 werkzeug - INFO - 127.0.0.1 - - [23/Apr/2023 22:05:26] "GET / HTTP/1.1" 200 -
+[2023-04-23 22:05:26,797] 224 werkzeug - INFO - 127.0.0.1 - - [23/Apr/2023 22:05:26] "GET /cam HTTP/1.1" 200 -

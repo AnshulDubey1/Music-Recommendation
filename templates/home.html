@@ -108,12 +108,10 @@
 </head>
 <body>
 	<div class="container">
-		<nav>
-			<ul>
-				<button><a href="#">Home</a> </button>
-			</ul>
-		</nav>
 		<h1>Prediction Model Welcome Page</h1>
+			<div>
+				<img src="{{ url_for('execute_camera') }}" width='50%'>
+			</div>
 		<p>Click the button below to make a prediction.</p>
 		<a href="#" class="button" id="learn-more-btn"><button>Predict</button></a>
 		<div class="feature-container">
@@ -123,7 +121,7 @@
 						const port = window.location.port;
 				
 						// Construct the URL for the "Learn More" button
-						const url = `http://${host}:${port}/cam`;
+						const url = `http://${host}:${port}/close_cam`;
 				
 						// Get a reference to the "Learn More" button
 						const learnMoreBtn = document.getElementById("learn-more-btn");
