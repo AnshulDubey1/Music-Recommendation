@@ -1,0 +1,106 @@
+body{
+    background-color: #000000;
+}
+
+.nav-color{
+    background-color: #20262E;
+}
+
+.navbar-brand{
+    color: white;
+}
+
+
+.container{
+    margin-top: 20px;
+}
+
+.img1{
+    height: 300px;
+    width: 260px;
+    border-radius: 40%;
+    border: 5px solid white;
+}
+.img2{
+     height: 300px;
+     width: 260px;
+     border-radius: 40%;
+     margin-right: 10px;
+     border: 5px solid white;
+}
+.img3{
+    height: 300px;
+    width: 260px;
+    /* margin-left: 10px; */
+    border-radius: 40%;
+    border: 5px solid white;
+}
+.img4{
+     height: 300px;
+     width: 260px;
+     /* margin-left: 20px; */
+     border-radius: 40%;
+     border: 5px solid white
+}
+.image-overlay{
+    position: absolute;
+    border-radius: 40%;
+    top: 76px;
+    height: 295px;
+    width: 260px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    opacity: 0;
+    transition: opacity 0.25s ;
+}
+
+.image-overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image-overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image-overlay:hover{
+    opacity: 1;
+}
+
+.image-title{
+    padding-top: 115px;
+    font-size: 2rem;
+}
+
+h1{
+    color: white;
+    font-family: 'Merriweather', serif;
+}
+.names{
+    color: white;
+    font-family: 'Carlito', sans-serif;
+}
+.img_reg{
+    height: 70%;
+}
+.btn_style{
+    font-family: 'Carlito', sans-serif;
+}
+.git_btn{
+    padding-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.cam_sec{
+    color: white;
+    font-family: 'Merriweather', serif;
+    text-align: left;
+}
+.btn_predict{
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}

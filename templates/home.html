@@ -1,131 +1,128 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-	<title>Prediction Model Welcome Page</title>
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-			background-color: #d3e8f0;
-			color: #333;
-			margin: 0;
-			padding: 0;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			min-height: 100vh;
-		}
-		.container {
-			width: 90%;
-			max-width: 800px;
-			margin: 0 auto;
-			padding: 30px;
-			background-color: #fff;
-			border-radius: 10px;
-			box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-			text-align: center;
-		}
-		h1 {
-			font-size: 42px;
-			margin-bottom: 30px;
-			color: #0077cc;
-		}
-		p {
-			font-size: 20px;
-			line-height: 1.5;
-			margin-bottom: 30px;
-			color: #666;
-		}
-		button {
-			background-color: #0077cc;
-			color: #fff;
-			border: none;
-			padding: 12px 30px;
-			font-size: 20px;
-			cursor: pointer;
-			border-radius: 5px;
-			transition: background-color 0.3s ease-in-out;
-			box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-		}
-		button:hover {
-			background-color: #005ea6;
-		}
-		.feature-container {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			margin-top: 50px;
-		}
-		.feature {
-			flex-basis: 300px;
-			margin: 10px;
-			padding: 10px 200px 10px 200px;		
-			background-color: #f8f8f8;
-			border-radius: 10px;
-			box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-			text-align: center;
-		}
-		.feature h2 {
-			font-size: 24px;
-			color: #0077cc;
-			margin-bottom: 10px;
-		}
-		.feature p {
-			font-size: 16px;
-			line-height: 1.5;
-			color: #666;
-			margin-bottom: 10px;
-		}
-        .menu {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: #0077cc;
-            color: #fff;
-            font-size: 20px;
-        }
-        .menu-item {
-            margin: 0 10px;
-            cursor: pointer;
-        }
-        .menu-item:hover {
-            text-decoration: underline;
-        }
-        .profile-img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
-		.logo img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 5px solid #fff;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-}
-	</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EBMRS</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Carlito&family=Lora&family=Merriweather&family=Ubuntu:wght@500&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-	<div class="container">
-		<h1>Prediction Model Welcome Page</h1>
-			<div>
-				<img src="{{ url_for('execute_camera') }}" width='50%'>
-			</div>
-		<p>Click the button below to make a prediction.</p>
-		<a href="#" class="button" id="learn-more-btn"><button>Predict</button></a>
-		<div class="feature-container">
-					<script>
-						// Get the current hostname and port
-						const host = window.location.hostname;
-						const port = window.location.port;
-				
-						// Construct the URL for the "Learn More" button
-						const url = `http://${host}:${port}/close_cam`;
-				
-						// Get a reference to the "Learn More" button
-						const learnMoreBtn = document.getElementById("learn-more-btn");
-				
-						// Set the button's URL
-						learnMoreBtn.href = url;
-					</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!-- navbar -->
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{{url_for('index')}}">
+                MUSIC RECOMENDATION SYSTEM
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Carlito&family=Lora&family=Merriweather&family=Ubuntu:wght@500&display=swap"
+                    rel="stylesheet">
+            </a>
+            <button class="navbar-toggler button-color" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link style=" color: black;" href="{{url_for('index')}}">Camera</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar end -->
+
+
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+            <div class="col image">
+                <img class="img1" src="{{url_for('static', filename='Images/Satyajeet.jpg')}}" alt="Satyajeet">
+                <div class="image-overlay">
+                    <div class="image-title">Satyajeet</div>
+                    <p class="image-description">
+                        Front-End Developer
+                    </p>
+                </div>
+            </div>
+            <div class="col image">
+                <img class="img2" src="{{url_for('static', filename='Images/Anshul.jpg')}}" alt="Anshul">
+                <div class="image-overlay">
+                    <div class="image-title">Anshul</div>
+                    <p class="image-description">
+                        Data Analysis and Analytics
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <img class="img3" src="{{url_for('static', filename='Images/Shahil.jpg')}}" alt="Shahil">
+                <div class="image-overlay">
+                    <div class="image-title">Shahil</div>
+                    <p class="image-description">
+                        Backend Developer
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <img class="img4" src="{{url_for('static', filename='Images/Shruti.jpg')}}" alt="Shruti">
+                <div class="image-overlay">
+                    <div class="image-title">Shruti</div>
+                    <p class="image-description">
+                        Cloud Deployer
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

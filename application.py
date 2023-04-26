@@ -60,12 +60,16 @@ def generate_frames():
    
 
 @app.route('/')
-def index():
+def home():
     return render_template('home.html') 
 
 @app.route('/cam')
 def execute_camera():
     return Response(generate_frames(), mimetype='multipart/x-mixed-replace;boundary=frame')
+
+@app.route('/index')
+def index():
+    return render_template('index.html')
 
 @app.route('/close_cam')
 def close_camera():
