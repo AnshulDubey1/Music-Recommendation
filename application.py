@@ -51,7 +51,7 @@ def generate_frames():
                     cv2.putText(frame, predicted_emotion, (int(x), int(y)), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255))
                     resized_img = cv2.resize(frame, (1000, 700))
                     cv2.imshow('Facial emotion analysis ', resized_img)
-                    with open('src/pipeline/Registered_emotions.txt', 'w') as f:
+                    with open('artifacts/Registered_emotions.txt', 'w') as f:
                         f.write('\n'.join(transfer))
                 ref,buffer=cv2.imencode('.jpg',frame)
                 frame = buffer.tobytes()
@@ -73,7 +73,7 @@ def index():
 
 @app.route('/close_cam')
 def close_camera():
-    emotion=emotion_average("src\pipeline\Registered_emotions.txt")
+    emotion=emotion_average("artifacts\Registered_emotions.txt")
     return render_template('suggestion.html', songs=str(recommender(emotion)))
 
 if __name__ == "__main__":
