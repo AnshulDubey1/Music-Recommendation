@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
-    <link rel="stylesheet" href="../static/css/error.css" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/error.css')}}" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Leelawadee UI:wght@700&display=swap"
@@ -12,7 +12,7 @@
   <body bgcolor="#0B0B0B">
     <div>
       <div class="error-1-parent">
-        <img class="error-1-icon" alt="" src="../static/Images/error.png" />
+        <img class="error-1-icon" alt="" src="{{url_for('static', filename='Images/error.png')}}" />
         <center>
           <h1><span class="oops" style="color: red;"> OOPs </span></h1>
         </center>
@@ -23,6 +23,6 @@
         </b>
       </div>
     </div>
-    <script src="./index.js"></script>
+    <script src="{{url_for('static', filename='Js/index.js')}}"></script>
   </body>
 </html>

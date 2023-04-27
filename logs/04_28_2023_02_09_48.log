@@ -1,0 +1,51 @@
+[2023-04-28 02:09:56,282] 224 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.5.170.168:8000
+[2023-04-28 02:09:56,282] 224 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2023-04-28 02:09:59,607] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:09:59] "GET / HTTP/1.1" 200 -
+[2023-04-28 02:10:00,202] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:00] "[36mGET /static/Images/Shahil.jpg HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:00,285] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:00] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:00,340] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:00] "[36mGET /static/Images/Shruti.jpg HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:00,358] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:00] "[36mGET /static/Images/Anshul.jpg HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:00,374] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:00] "[36mGET /static/Images/Satyajeet.jpg HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:06,840] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:06] "GET /anis HTTP/1.1" 200 -
+[2023-04-28 02:10:06,913] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:06] "GET /static/css/error.css HTTP/1.1" 200 -
+[2023-04-28 02:10:06,921] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:06] "GET /static/Images/error.png HTTP/1.1" 200 -
+[2023-04-28 02:10:06,934] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:06] "GET /static/Js/index.js HTTP/1.1" 200 -
+[2023-04-28 02:10:12,107] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:12] "GET /%7B%7Burl_for('index')%7D%7D HTTP/1.1" 200 -
+[2023-04-28 02:10:12,167] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:12] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:12,171] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:12] "[36mGET /static/Js/index.js HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:12,174] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:12] "[36mGET /static/Images/error.png HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:17,362] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:17] "GET /%7B%7Burl_for('index')%7D%7D HTTP/1.1" 200 -
+[2023-04-28 02:10:17,421] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:17] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:17,425] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:17] "[36mGET /static/Js/index.js HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:17,428] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:17] "[36mGET /static/Images/error.png HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:22,641] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:22] "GET /%7B%7Burl_for('index')%7D%7D HTTP/1.1" 200 -
+[2023-04-28 02:10:22,693] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:22] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:22,705] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:22] "[36mGET /static/Js/index.js HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:22,706] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:22] "[36mGET /static/Images/error.png HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:27,901] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:27] "GET /%7B%7Burl_for('index')%7D%7D HTTP/1.1" 200 -
+[2023-04-28 02:10:27,962] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:27] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:27,978] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:27] "[36mGET /static/Js/index.js HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:27,982] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:27] "[36mGET /static/Images/error.png HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:33,178] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:33] "GET /%7B%7Burl_for('index')%7D%7D HTTP/1.1" 200 -
+[2023-04-28 02:10:33,260] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:33] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:33,285] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:33] "[36mGET /static/Js/index.js HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:33,289] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:33] "[36mGET /static/Images/error.png HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:38,474] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:38] "GET /%7B%7Burl_for('index')%7D%7D HTTP/1.1" 200 -
+[2023-04-28 02:10:38,554] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:38] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:38,563] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:38] "[36mGET /static/Js/index.js HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:38,566] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:38] "[36mGET /static/Images/error.png HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:43,775] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:43] "GET /%7B%7Burl_for('index')%7D%7D HTTP/1.1" 200 -
+[2023-04-28 02:10:43,850] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:43] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:43,874] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:43] "[36mGET /static/Js/index.js HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:43,876] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:43] "[36mGET /static/Images/error.png HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:49,057] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:49] "GET /%7B%7Burl_for('index')%7D%7D HTTP/1.1" 200 -
+[2023-04-28 02:10:49,140] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:49] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:49,150] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:49] "[36mGET /static/Js/index.js HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:49,153] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:49] "[36mGET /static/Images/error.png HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:54,339] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:54] "GET /%7B%7Burl_for('index')%7D%7D HTTP/1.1" 200 -
+[2023-04-28 02:10:54,457] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:54] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:54,466] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:54] "[36mGET /static/Js/index.js HTTP/1.1[0m" 304 -
+[2023-04-28 02:10:54,469] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:10:54] "[36mGET /static/Images/error.png HTTP/1.1[0m" 304 -

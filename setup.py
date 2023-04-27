@@ -13,7 +13,7 @@ def get_requirements(file_path:str)->List[str]:
 setup(
     name="DeepLearningProject",
     version="0.0.0.1",
-    author="Anshul",
+    author=["Anshul","Satyajeet","Shruti","Shahil"],
     packages=find_packages(),
     install_requires = get_requirements("requirements.txt")
 )
