@@ -23,40 +23,38 @@ transfer = []
 
 def generate_frames():
     start_time = time.time()
-    with app.app_context():  # Set up the application context
-        while True:
-
-            success, frame = camera.read()
-            if not success:
-                break
-            else:
-                gray_img = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-                faces_detected = face_haar_cascade.detectMultiScale(gray_img, 1.32, 5)
-                for (x, y, w, h) in faces_detected:
-                    cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), thickness=7)
-                    roi_gray = gray_img[y:y + w, x:x + h]  # cropping region of interest i.e. face area from  image
-                    roi_gray = cv2.resize(roi_gray, (224, 224))
-                    img_pixels = img_to_array(roi_gray)
-                    img_pixels = np.expand_dims(img_pixels, axis=0)
-                    img_pixels /= 255
-                    predictions = model.predict(img_pixels)
+    while True:
+        success, frame = camera.read()
+        if not success:
+            break
+        else:
+            gray_img = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+            faces_detected = face_haar_cascade.detectMultiScale(gray_img, 1.32, 5)
+            for (x, y, w, h) in faces_detected:
+                cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), thickness=7)
+                roi_gray = gray_img[y:y + w, x:x + h]  # cropping region of interest i.e. face area from  image
+                roi_gray = cv2.resize(roi_gray, (224, 224))
+                img_pixels = img_to_array(roi_gray)
+                img_pixels = np.expand_dims(img_pixels, axis=0)
+                img_pixels /= 255
+                predictions = model.predict(img_pixels)
 
                     # find max indexed array
-                    max_index = np.argmax(predictions[0])
+                max_index = np.argmax(predictions[0])
 
-                    predicted_emotion = emotions[max_index]
+                predicted_emotion = emotions[max_index]
 
-                    transfer.append(str(max_index))
+                transfer.append(str(max_index))
 
-                    cv2.putText(frame, predicted_emotion, (int(x), int(y)), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255))
-                    resized_img = cv2.resize(frame, (1000, 700))
-                    cv2.imshow('Facial emotion analysis ', resized_img)
-                    with open('artifacts/Registered_emotions.txt', 'w') as f:
-                        f.write('\n'.join(transfer))
-                ref,buffer=cv2.imencode('.jpg',frame)
-                frame = buffer.tobytes()
-                yield (b'--frame\r\n'
-                    b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
+                cv2.putText(frame, predicted_emotion, (int(x), int(y)), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255))
+                resized_img = cv2.resize(frame, (1000, 700))
+                cv2.imshow('Facial emotion analysis ', resized_img)
+                with open('artifacts/Registered_emotions.txt', 'w') as f:
+                    f.write('\n'.join(transfer))
+            ref,buffer=cv2.imencode('.jpg',frame)
+            frame = buffer.tobytes()
+            yield (b'--frame\r\n'
+                b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
    
 
 @app.route('/')

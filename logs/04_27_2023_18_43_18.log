@@ -1,0 +1,13 @@
+[2023-04-27 18:43:36,777] 186 werkzeug - WARNING -  * Debugger is active!
+[2023-04-27 18:43:36,812] 186 werkzeug - INFO -  * Debugger PIN: 258-079-772
+[2023-04-27 18:43:42,480] 186 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2023 18:43:42] "GET / HTTP/1.1" 200 -
+[2023-04-27 18:43:42,653] 186 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2023 18:43:42] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-04-27 18:43:42,862] 186 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2023 18:43:42] "[36mGET /static/Images/Anshul.jpg HTTP/1.1[0m" 304 -
+[2023-04-27 18:43:42,869] 186 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2023 18:43:42] "[36mGET /static/Images/Satyajeet.jpg HTTP/1.1[0m" 304 -
+[2023-04-27 18:43:42,893] 186 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2023 18:43:42] "[36mGET /static/Images/Shruti.jpg HTTP/1.1[0m" 304 -
+[2023-04-27 18:43:42,896] 186 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2023 18:43:42] "[36mGET /static/Images/Shahil.jpg HTTP/1.1[0m" 304 -
+[2023-04-27 18:43:43,747] 186 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2023 18:43:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2023-04-27 18:43:54,683] 186 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2023 18:43:54] "GET /index HTTP/1.1" 200 -
+[2023-04-27 18:43:54,746] 186 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2023 18:43:54] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-04-27 18:43:56,144] 186 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2023 18:43:56] "GET /cam HTTP/1.1" 200 -
+[2023-04-27 18:44:38,320] 186 werkzeug - INFO -  * Detected change in 'C:\\Users\\KIIT\\Documents\\GitHub\\Music-Recommendation\\application.py', reloading
