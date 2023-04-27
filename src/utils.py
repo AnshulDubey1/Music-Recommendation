@@ -66,3 +66,10 @@ def string(r):
     except Exception as e:
         raise CustomException(e,sys)
     
+def write(connection_string, transfer):
+    try:
+        with open('artifacts/Registered_emotions.txt', 'w') as f:
+            f.write('\n'.join(transfer))
+
+    except Exception as E:
+        raise CustomException(E, sys)

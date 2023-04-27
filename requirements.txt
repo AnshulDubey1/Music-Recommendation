@@ -10,4 +10,5 @@ ipykernel
 spotipy
 opencv-python
 flask
+Pillow
 -e .

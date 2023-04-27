@@ -1,0 +1,12 @@
+[2023-04-27 22:27:37,056] 186 werkzeug - WARNING -  * Debugger is active!
+[2023-04-27 22:27:37,069] 186 werkzeug - INFO -  * Debugger PIN: 144-247-948
+[2023-04-27 22:27:38,288] 186 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2023 22:27:38] "GET / HTTP/1.1" 200 -
+[2023-04-27 22:27:38,324] 186 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2023 22:27:38] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-04-27 22:27:38,340] 186 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2023 22:27:38] "[36mGET /static/Images/Satyajeet.jpg HTTP/1.1[0m" 304 -
+[2023-04-27 22:27:38,343] 186 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2023 22:27:38] "[36mGET /static/Images/Anshul.jpg HTTP/1.1[0m" 304 -
+[2023-04-27 22:27:38,347] 186 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2023 22:27:38] "[36mGET /static/Images/Shahil.jpg HTTP/1.1[0m" 304 -
+[2023-04-27 22:27:38,350] 186 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2023 22:27:38] "[36mGET /static/Images/Shruti.jpg HTTP/1.1[0m" 304 -
+[2023-04-27 22:27:42,182] 186 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2023 22:27:42] "GET /index HTTP/1.1" 200 -
+[2023-04-27 22:27:42,205] 186 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2023 22:27:42] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-04-27 22:27:43,837] 186 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2023 22:27:43] "GET /cam HTTP/1.1" 200 -
+[2023-04-27 22:28:03,055] 186 werkzeug - INFO - 127.0.0.1 - - [27/Apr/2023 22:28:03] "GET /close_cam HTTP/1.1" 200 -
