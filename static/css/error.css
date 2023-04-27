@@ -1,0 +1,30 @@
+.error-1-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.oops {
+  position: absolute;
+}
+.we-apologise-for {
+  margin: 0;
+}
+.we-apologise-for-container {
+  position: absolute;
+  top: 131px;
+  left: 380px;
+  font-size: 38px;
+  display: inline-block;
+  color: #06ccab;
+  width: 487px;
+}
+.error-1-parent {
+  position: absolute;
+  top: 95px;
+  left: 87px;
+  width: 967px;
+  height: 387px;
+}
