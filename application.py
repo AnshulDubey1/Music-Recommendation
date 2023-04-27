@@ -1,17 +1,8 @@
 from flask import Flask, request, render_template, Response,redirect,url_for
-import numpy as np
-import pandas as pd
-import os
-from src.pipeline.integration import Execute as integration_Execute
 from src.pipeline.predict_pipeline import CameraModule
 from src.pipeline.song_predictor import recommender 
 from src.utils import emotion_average
 from src.exception import CustomException
-import sys
-import cv2
-from keras.models import load_model
-from keras.utils import load_img, img_to_array 
-import time
 
 app = Flask(__name__)
 
