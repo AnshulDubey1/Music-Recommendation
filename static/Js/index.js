@@ -8,5 +8,5 @@ for (let i = seconds; i > 0; i--) {
 }
 
 setTimeout(function () {
-  window.location.href = "index.html";
+  window.location.href = "\index";
 }, seconds * 1000);

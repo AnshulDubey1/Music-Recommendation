@@ -1,0 +1,23 @@
+[2023-04-28 02:11:27,087] 224 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.5.170.168:8000
+[2023-04-28 02:11:27,087] 224 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2023-04-28 02:11:32,102] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:11:32] "GET / HTTP/1.1" 200 -
+[2023-04-28 02:11:32,473] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:11:32] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-04-28 02:11:32,614] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:11:32] "[36mGET /static/Images/Anshul.jpg HTTP/1.1[0m" 304 -
+[2023-04-28 02:11:32,623] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:11:32] "[36mGET /static/Images/Shahil.jpg HTTP/1.1[0m" 304 -
+[2023-04-28 02:11:32,629] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:11:32] "[36mGET /static/Images/Shruti.jpg HTTP/1.1[0m" 304 -
+[2023-04-28 02:11:32,634] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:11:32] "[36mGET /static/Images/Satyajeet.jpg HTTP/1.1[0m" 304 -
+[2023-04-28 02:11:36,888] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:11:36] "GET /hehe HTTP/1.1" 200 -
+[2023-04-28 02:11:36,940] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:11:36] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+[2023-04-28 02:11:36,953] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:11:36] "[36mGET /static/Images/error.png HTTP/1.1[0m" 304 -
+[2023-04-28 02:11:36,964] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:11:36] "GET /static/Js/index.js HTTP/1.1" 200 -
+[2023-04-28 02:11:42,138] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:11:42] "GET /templatesindex.html HTTP/1.1" 200 -
+[2023-04-28 02:11:42,221] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:11:42] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+[2023-04-28 02:11:42,223] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:11:42] "[36mGET /static/Js/index.js HTTP/1.1[0m" 304 -
+[2023-04-28 02:11:42,226] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:11:42] "[36mGET /static/Images/error.png HTTP/1.1[0m" 304 -
+[2023-04-28 02:11:47,411] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:11:47] "GET /templatesindex.html HTTP/1.1" 200 -
+[2023-04-28 02:11:47,477] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:11:47] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+[2023-04-28 02:11:47,486] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:11:47] "[36mGET /static/Js/index.js HTTP/1.1[0m" 304 -
+[2023-04-28 02:11:47,490] 224 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 02:11:47] "[36mGET /static/Images/error.png HTTP/1.1[0m" 304 -
