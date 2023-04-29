@@ -1,0 +1,15 @@
+[2023-04-30 01:44:22,423] 224 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.6.191.208:8000
+[2023-04-30 01:44:22,423] 224 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2023-04-30 01:44:29,779] 224 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 01:44:29] "GET / HTTP/1.1" 200 -
+[2023-04-30 01:44:29,947] 224 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 01:44:29] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-04-30 01:44:29,966] 224 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 01:44:29] "[36mGET /static/Images/Satyajeet.jpg HTTP/1.1[0m" 304 -
+[2023-04-30 01:44:29,968] 224 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 01:44:29] "[36mGET /static/Images/Anshul.jpg HTTP/1.1[0m" 304 -
+[2023-04-30 01:44:29,971] 224 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 01:44:29] "[36mGET /static/Images/Shahil.jpg HTTP/1.1[0m" 304 -
+[2023-04-30 01:44:29,974] 224 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 01:44:29] "[36mGET /static/Images/Shruti.jpg HTTP/1.1[0m" 304 -
+[2023-04-30 01:44:32,167] 224 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 01:44:32] "GET /index HTTP/1.1" 200 -
+[2023-04-30 01:44:32,188] 224 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 01:44:32] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-04-30 01:44:34,800] 224 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 01:44:34] "GET /cam HTTP/1.1" 200 -
+[2023-04-30 01:46:29,931] 224 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 01:46:29] "GET /close_cam HTTP/1.1" 200 -
