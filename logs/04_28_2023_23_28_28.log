@@ -1,0 +1,13 @@
+[2023-04-28 23:28:39,789] 186 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.5.170.168:8000
+[2023-04-28 23:28:39,789] 186 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2023-04-28 23:28:42,627] 186 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 23:28:42] "GET /ungabunga HTTP/1.1" 200 -
+[2023-04-28 23:28:42,706] 186 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 23:28:42] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+[2023-04-28 23:28:42,800] 186 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 23:28:42] "[36mGET /static/Js/index.js HTTP/1.1[0m" 304 -
+[2023-04-28 23:28:42,805] 186 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 23:28:42] "[36mGET /static/Images/error.png HTTP/1.1[0m" 304 -
+[2023-04-28 23:28:48,156] 186 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 23:28:48] "GET /index HTTP/1.1" 200 -
+[2023-04-28 23:28:48,253] 186 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 23:28:48] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-04-28 23:28:49,527] 186 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 23:28:49] "GET /cam HTTP/1.1" 200 -
+[2023-04-28 23:29:14,950] 186 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 23:29:14] "GET /close_cam HTTP/1.1" 200 -

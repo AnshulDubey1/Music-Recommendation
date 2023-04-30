@@ -1,5 +1,0 @@
-[2023-04-22 22:41:00,392] 224 werkzeug - WARNING -  * Debugger is active!
-[2023-04-22 22:41:00,407] 224 werkzeug - INFO -  * Debugger PIN: 229-498-762
-[2023-04-22 22:41:43,179] 224 werkzeug - INFO - 127.0.0.1 - - [22/Apr/2023 22:41:43] "GET / HTTP/1.1" 200 -
-[2023-04-22 22:41:48,136] 224 werkzeug - INFO - 127.0.0.1 - - [22/Apr/2023 22:41:48] "GET /cam HTTP/1.1" 200 -
-[2023-04-22 22:42:16,466] 224 werkzeug - INFO -  * Detected change in 'C:\\Users\\KIIT\\Documents\\GitHub\\Music-Recommendation\\application.py', reloading

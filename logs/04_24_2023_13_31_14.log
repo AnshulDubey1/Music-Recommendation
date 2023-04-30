@@ -1,7 +1,0 @@
-[2023-04-24 13:31:32,428] 224 werkzeug - WARNING -  * Debugger is active!
-[2023-04-24 13:31:32,456] 224 werkzeug - INFO -  * Debugger PIN: 258-079-772
-[2023-04-24 13:31:52,493] 224 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2023 13:31:52] "GET / HTTP/1.1" 200 -
-[2023-04-24 13:31:52,498] 224 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2023 13:31:52] "GET /close_cam HTTP/1.1" 200 -
-[2023-04-24 13:31:54,453] 224 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2023 13:31:54] "GET /cam HTTP/1.1" 200 -
-[2023-04-24 13:32:26,003] 224 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2023 13:32:26] "GET /close_cam HTTP/1.1" 200 -
-[2023-04-24 13:32:44,348] 224 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2023 13:32:44] "GET /close_cam HTTP/1.1" 200 -
