@@ -50,9 +50,9 @@ def recommender(emotion):
         track1 = sp.track(string(random_row1))
         track2 = sp.track(string(random_row2))
         if emotion==1:
-            return("The recommended track name:",track1['name'],"and the artist name:",track1['artists'][0]['name'])
+            return(track1['id'])
         else :
-            return("The recommended track name:",track2['name'],"and the artist name:",track2['artists'][0]['name'])
+            return(track2['id'])
     except Exception as e:
         raise CustomException(e,sys)
 

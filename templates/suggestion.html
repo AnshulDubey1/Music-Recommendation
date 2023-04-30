@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Song Suggestions</title>
-  </head>
-  <body>
-    <h1>Song Suggestions</h1>
-    <p>Based on your emotions, we recommend the following song:</p>
-    <ul>
-      <p>{{ songs }}</p>
-
-    </ul>
-  </body>
+<head>
+    <title>{{ track['name'] }} by {{ track['artists'][0]['name'] }}</title>
+</head>
+<body>
+    <h1>{{ track['name'] }}</h1>
+    <p>by {{ track['artists'][0]['name'] }} from {{ track['album']['name'] }}</p>
+    <img src="{{ track['album']['images'][0]['url'] }}" alt="Album cover">
+    <audio controls>
+        <source src="{{ track['preview_url'] }}" type="audio/mpeg">
+    </audio>
+</body>
 </html>

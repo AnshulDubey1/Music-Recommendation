@@ -3,6 +3,10 @@ from src.pipeline.predict_pipeline import CameraModule
 from src.pipeline.song_predictor import recommender 
 from src.utils import emotion_average
 from src.exception import CustomException
+import spotipy
+from spotipy.oauth2 import SpotifyClientCredentials
+sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id="12496220faa84eb39d6fdd22d53f3599",
+                                                                client_secret="bc1f341b8551410c98f12d749c49fd33")) 
 
 app = Flask(__name__)
 
@@ -29,7 +33,8 @@ def index():
 @app.route('/close_cam')
 def close_camera():
     emotion=emotion_average("artifacts\Registered_emotions.txt")
-    return render_template('suggestion.html', songs=str(recommender(emotion)))
+    songs=sp.track(recommender(emotion))
+    return render_template('suggestion.html', track=songs)
 
 @app.errorhandler(404)
 def page_not_found(error):
