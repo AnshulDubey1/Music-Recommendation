@@ -2,11 +2,23 @@
 <html>
 <head>
     <title>{{ track['name'] }} by {{ track['artists'][0]['name'] }}</title>
+    <style>
+		/* Rounded image style */
+		img.rounded {
+			border-radius: 50%;
+		}
+
+		/* Small image style */
+		img.small {
+			width: 100px;
+			height: 100px;
+		}
+	</style>
 </head>
 <body>
     <h1>{{ track['name'] }}</h1>
     <p>by {{ track['artists'][0]['name'] }} from {{ track['album']['name'] }}</p>
-    <img src="{{ track['album']['images'][0]['url'] }}" alt="Album cover">
+    <img class="rounded small" src="{{ track['album']['images'][0]['url'] }}" alt="Album cover">
     <audio controls>
         <source src="{{ track['preview_url'] }}" type="audio/mpeg">
     </audio>

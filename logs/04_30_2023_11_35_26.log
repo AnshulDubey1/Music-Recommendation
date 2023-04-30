@@ -1,0 +1,44 @@
+[2023-04-30 11:35:32,135] 186 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.5.170.168:8000
+[2023-04-30 11:35:32,135] 186 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2023-04-30 11:35:35,117] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 11:35:35] "GET / HTTP/1.1" 200 -
+[2023-04-30 11:35:35,202] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 11:35:35] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-04-30 11:35:35,260] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 11:35:35] "[36mGET /static/Images/Anshul.jpg HTTP/1.1[0m" 304 -
+[2023-04-30 11:35:35,261] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 11:35:35] "[36mGET /static/Images/Satyajeet.jpg HTTP/1.1[0m" 304 -
+[2023-04-30 11:35:35,265] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 11:35:35] "[36mGET /static/Images/Shahil.jpg HTTP/1.1[0m" 304 -
+[2023-04-30 11:35:35,269] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 11:35:35] "[36mGET /static/Images/Shruti.jpg HTTP/1.1[0m" 304 -
+[2023-04-30 11:35:36,929] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 11:35:36] "GET /index HTTP/1.1" 200 -
+[2023-04-30 11:35:37,007] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 11:35:37] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-04-30 11:35:38,856] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 11:35:38] "GET /cam HTTP/1.1" 200 -
+[2023-04-30 11:35:39,012] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 11:35:39] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-04-30 11:35:41,380] 1414 application - ERROR - Exception on /close_cam [GET]
+Traceback (most recent call last):
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\src\utils.py", line 42, in emotion_average
+    eavg= math.floor(sum(int_list) / len(int_list))
+ZeroDivisionError: division by zero
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "application.py", line 35, in close_camera
+    emotion=emotion_average("artifacts\Registered_emotions.txt")
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\src\utils.py", line 47, in emotion_average
+    raise CustomException(e,sys)
+src.exception.CustomException: Error occured in python script name [C:\Users\KIIT\Documents\GitHub\Music-Recommendation\src\utils.py] line number [42] error message[division by zero]
+[2023-04-30 11:35:41,406] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 11:35:41] "[35m[1mGET /close_cam HTTP/1.1[0m" 500 -
+[2023-04-30 11:35:41,534] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 11:35:41] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-04-30 11:35:44,949] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 11:35:44] "GET /cam HTTP/1.1" 200 -
+[2023-04-30 11:35:45,196] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 11:35:45] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-04-30 11:36:00,657] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 11:36:00] "GET /close_cam HTTP/1.1" 200 -
+[2023-04-30 11:36:02,075] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 11:36:02] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-04-30 11:36:08,313] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 11:36:08] "GET /favicon.ico HTTP/1.1" 200 -

@@ -11,7 +11,7 @@ def recommender(emotion):
     try:
         sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id="12496220faa84eb39d6fdd22d53f3599",
                                                                 client_secret="bc1f341b8551410c98f12d749c49fd33"))
-        playlist_link = "https://open.spotify.com/playlist/37i9dQZEVXbNG2KDcFcKOF?si=1333723a6eff4b7f"
+        playlist_link = "https://open.spotify.com/playlist/37i9dQZEVXbMDoHDwVN2tF"
         playlist_URI = playlist_link.split("/")[-1].split("?")[0]
         results = sp.playlist(playlist_URI, fields='tracks,next')
         tracks=results['tracks']
@@ -55,4 +55,3 @@ def recommender(emotion):
             return(track2['id'])
     except Exception as e:
         raise CustomException(e,sys)
-

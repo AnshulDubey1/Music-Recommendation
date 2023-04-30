@@ -1,0 +1,51 @@
+[2023-04-30 06:48:53,528] 186 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.5.170.168:8000
+[2023-04-30 06:48:53,529] 186 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2023-04-30 06:48:53,644] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 06:48:53] "GET /index HTTP/1.1" 200 -
+[2023-04-30 06:48:53,881] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 06:48:53] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-04-30 06:48:55,565] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 06:48:55] "GET /cam HTTP/1.1" 200 -
+[2023-04-30 06:48:55,768] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 06:48:55] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-04-30 06:48:57,413] 1414 application - ERROR - Exception on /close_cam [GET]
+Traceback (most recent call last):
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\src\pipeline\song_predictor.py", line 16, in recommender
+    results = sp.playlist(playlist_URI, fields='tracks,next')
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\spotipy\client.py", line 651, in playlist
+    return self._get(
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\spotipy\client.py", line 323, in _get
+    return self._internal_call("GET", url, payload, kwargs)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\spotipy\client.py", line 247, in _internal_call
+    headers = self._auth_headers()
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\spotipy\client.py", line 238, in _auth_headers
+    token = self.auth_manager.get_access_token(as_dict=False)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\spotipy\oauth2.py", line 234, in get_access_token
+    token_info = self.cache_handler.get_cached_token()
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\spotipy\cache_handler.py", line 81, in get_cached_token
+    token_info = json.loads(token_info_string)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "application.py", line 36, in close_camera
+    songs=sp.track(recommender(emotion))
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\src\pipeline\song_predictor.py", line 57, in recommender
+    raise CustomException(e,sys)
+src.exception.CustomException: Error occured in python script name [C:\Users\KIIT\Documents\GitHub\Music-Recommendation\src\pipeline\song_predictor.py] line number [16] error message[Expecting value: line 1 column 1 (char 0)]
+[2023-04-30 06:48:57,431] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 06:48:57] "[35m[1mGET /close_cam HTTP/1.1[0m" 500 -
+[2023-04-30 06:48:57,956] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 06:48:57] "GET /favicon.ico HTTP/1.1" 200 -
