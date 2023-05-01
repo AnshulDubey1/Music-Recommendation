@@ -1,0 +1,98 @@
+[2023-05-01 17:48:11,160] 186 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.5.170.168:8000
+[2023-05-01 17:48:11,161] 186 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2023-05-01 17:48:25,627] 1414 application - ERROR - Exception on /index [GET]
+Traceback (most recent call last):
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "application.py", line 31, in index
+    return render_template('index.html')
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\templating.py", line 132, in _render
+    rv = template.render(context)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\templates\index.html", line 130, in top-level template code
+    <a href="{{url_for('close_camera')}}" class="btn btn-secondary btn-outline-dark btn_predict" id="learn-more-btn" role="button">PREDICT</a>
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\werkzeug\routing\map.py", line 947, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'close_camera'. Did you forget to specify values ['prefer']?
+[2023-05-01 17:48:25,641] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 17:48:25] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+[2023-05-01 17:48:25,766] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 17:48:25] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-01 17:48:27,663] 1414 application - ERROR - Exception on /index [GET]
+Traceback (most recent call last):
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "application.py", line 31, in index
+    return render_template('index.html')
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\templating.py", line 132, in _render
+    rv = template.render(context)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\templates\index.html", line 130, in top-level template code
+    <a href="{{url_for('close_camera')}}" class="btn btn-secondary btn-outline-dark btn_predict" id="learn-more-btn" role="button">PREDICT</a>
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\werkzeug\routing\map.py", line 947, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'close_camera'. Did you forget to specify values ['prefer']?
+[2023-05-01 17:48:27,666] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 17:48:27] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+[2023-05-01 17:48:27,749] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 17:48:27] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-01 17:48:37,097] 1414 application - ERROR - Exception on /index [GET]
+Traceback (most recent call last):
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "application.py", line 31, in index
+    return render_template('index.html')
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\templating.py", line 132, in _render
+    rv = template.render(context)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\templates\index.html", line 130, in top-level template code
+    <a href="{{url_for('close_camera')}}" class="btn btn-secondary btn-outline-dark btn_predict" id="learn-more-btn" role="button">PREDICT</a>
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\werkzeug\routing\map.py", line 947, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'close_camera'. Did you forget to specify values ['prefer']?
+[2023-05-01 17:48:37,099] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 17:48:37] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+[2023-05-01 17:48:37,187] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 17:48:37] "GET /favicon.ico HTTP/1.1" 200 -

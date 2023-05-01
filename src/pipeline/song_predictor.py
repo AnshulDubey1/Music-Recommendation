@@ -7,11 +7,16 @@ from src.utils import string
 from src.exception import CustomException
 import sys
 import pandas as pd
-def recommender(emotion):
+def recommender(emotion,preference):
     try:
         sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id="12496220faa84eb39d6fdd22d53f3599",
+          
                                                                 client_secret="bc1f341b8551410c98f12d749c49fd33"))
-        playlist_link = "https://open.spotify.com/playlist/37i9dQZEVXbMDoHDwVN2tF"
+        if preference=="1":
+             playlist_link ="https://open.spotify.com/playlist/37i9dQZEVXbLZ52XmnySJg"
+        elif preference=="2":
+            playlist_link = "https://open.spotify.com/playlist/37i9dQZEVXbMDoHDwVN2tF"
+
         playlist_URI = playlist_link.split("/")[-1].split("?")[0]
         results = sp.playlist(playlist_URI, fields='tracks,next')
         tracks=results['tracks']

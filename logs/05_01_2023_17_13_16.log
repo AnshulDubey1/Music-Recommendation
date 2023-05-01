@@ -1,0 +1,23 @@
+[2023-05-01 17:13:23,351] 186 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.5.170.168:8000
+[2023-05-01 17:13:23,352] 186 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2023-05-01 17:13:38,115] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 17:13:38] "GET /jkfasnksa.dnfkldsnflkasnflkasnlasknflkasnfkslnfl HTTP/1.1" 200 -
+[2023-05-01 17:13:38,178] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 17:13:38] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+[2023-05-01 17:13:38,191] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 17:13:38] "[36mGET /static/Js/index.js HTTP/1.1[0m" 304 -
+[2023-05-01 17:13:38,195] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 17:13:38] "[36mGET /static/Images/error.png HTTP/1.1[0m" 304 -
+[2023-05-01 17:13:38,568] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 17:13:38] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-01 17:13:43,597] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 17:13:43] "GET /index HTTP/1.1" 200 -
+[2023-05-01 17:13:43,655] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 17:13:43] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-05-01 17:13:45,813] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 17:13:45] "GET /cam HTTP/1.1" 200 -
+[2023-05-01 17:13:46,026] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 17:13:46] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-01 17:13:53,363] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 17:13:53] "POST /submitted HTTP/1.1" 200 -
+[2023-05-01 17:13:53,429] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 17:13:53] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+[2023-05-01 17:13:53,443] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 17:13:53] "[36mGET /static/Js/index.js HTTP/1.1[0m" 304 -
+[2023-05-01 17:13:53,451] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 17:13:53] "[36mGET /static/Images/error.png HTTP/1.1[0m" 304 -
+[2023-05-01 17:13:53,629] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 17:13:53] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-01 17:13:59,364] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 17:13:59] "GET /index HTTP/1.1" 200 -
+[2023-05-01 17:13:59,417] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 17:13:59] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-05-01 17:13:59,640] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 17:13:59] "GET /cam HTTP/1.1" 200 -
+[2023-05-01 17:13:59,827] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 17:13:59] "GET /favicon.ico HTTP/1.1" 200 -

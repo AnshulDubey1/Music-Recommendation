@@ -1,0 +1,41 @@
+[2023-05-01 18:16:59,213] 186 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.5.170.168:8000
+[2023-05-01 18:16:59,214] 186 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2023-05-01 18:17:03,091] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:17:03] "GET /index HTTP/1.1" 200 -
+[2023-05-01 18:17:03,203] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:17:03] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-05-01 18:17:06,264] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:17:06] "GET /cam HTTP/1.1" 200 -
+[2023-05-01 18:17:06,493] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:17:06] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-01 18:17:10,554] 1414 application - ERROR - Exception on /close_cam [POST]
+Traceback (most recent call last):
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\src\utils.py", line 42, in emotion_average
+    eavg= math.floor(sum(int_list) / len(int_list))
+ZeroDivisionError: division by zero
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "application.py", line 37, in close_camera
+    emotion=emotion_average("artifacts\Registered_emotions.txt")
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\src\utils.py", line 47, in emotion_average
+    raise CustomException(e,sys)
+src.exception.CustomException: Error occured in python script name [C:\Users\KIIT\Documents\GitHub\Music-Recommendation\src\utils.py] line number [42] error message[division by zero]
+[2023-05-01 18:17:10,559] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:17:10] "[35m[1mPOST /close_cam HTTP/1.1[0m" 500 -
+[2023-05-01 18:17:10,689] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:17:10] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-01 18:17:54,946] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:17:54] "GET /cam HTTP/1.1" 200 -
+[2023-05-01 18:17:55,190] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:17:55] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-01 18:18:12,632] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:18:12] "POST /close_cam HTTP/1.1" 200 -
+[2023-05-01 18:18:12,751] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:18:12] "[36mGET /static/css/suggestion1.css HTTP/1.1[0m" 304 -
+[2023-05-01 18:18:12,779] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:18:12] "[36mGET /static/Js/suggestion1.js HTTP/1.1[0m" 304 -
+[2023-05-01 18:18:13,095] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:18:13] "GET /static/css/Images/background.jpg HTTP/1.1" 200 -
+[2023-05-01 18:18:13,701] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:18:13] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-01 18:18:18,853] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:18:18] "GET /favicon.ico HTTP/1.1" 200 -

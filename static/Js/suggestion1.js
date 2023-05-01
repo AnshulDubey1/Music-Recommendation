@@ -1,11 +1,11 @@
 console.log("Welcome to Suggestion page"); 
 
 //audioElemet.play()
-let songIndex = 0;
-var audioSrc = previewUrl;
-let audioElement = new Audio('audioSrc');
-let masterPlay = document.getElementById('masterPlay');
-let myProgressBar = document.getElementById('myProgressBar');
+// let songIndex = 0;
+// var audioSrc = previewUrl;
+// let audioElement = new Audio('audioSrc');
+// let masterPlay = document.getElementById('masterPlay');
+// let myProgressBar = document.getElementById('myProgressBar');
 
 // let songs = [
 //     {songName: "song", filePath: "templates\song.mp3"}

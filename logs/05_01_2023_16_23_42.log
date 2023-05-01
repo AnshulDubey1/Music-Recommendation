@@ -1,0 +1,43 @@
+[2023-05-01 16:23:51,775] 186 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.5.170.168:8000
+[2023-05-01 16:23:51,776] 186 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2023-05-01 16:23:52,178] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:23:52] "GET / HTTP/1.1" 200 -
+[2023-05-01 16:23:52,242] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:23:52] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-05-01 16:23:52,332] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:23:52] "[36mGET /static/Images/Satyajeet.jpg HTTP/1.1[0m" 304 -
+[2023-05-01 16:23:52,334] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:23:52] "[36mGET /static/Images/Anshul.jpg HTTP/1.1[0m" 304 -
+[2023-05-01 16:23:52,342] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:23:52] "[36mGET /static/Images/Shahil.jpg HTTP/1.1[0m" 304 -
+[2023-05-01 16:23:52,343] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:23:52] "[36mGET /static/Images/Shruti.jpg HTTP/1.1[0m" 304 -
+[2023-05-01 16:23:52,753] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:23:52] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-01 16:23:54,230] 1414 application - ERROR - Exception on /index [GET]
+Traceback (most recent call last):
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "application.py", line 31, in index
+    return render_template('index.html')
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\jinja2\environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\templates\index.html", line 122, in template
+    {% comment %} <script>
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'comment'.
+[2023-05-01 16:23:54,234] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:23:54] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+[2023-05-01 16:23:54,323] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:23:54] "GET /favicon.ico HTTP/1.1" 200 -

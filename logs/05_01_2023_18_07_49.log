@@ -1,0 +1,59 @@
+[2023-05-01 18:07:53,905] 186 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.5.170.168:8000
+[2023-05-01 18:07:53,905] 186 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2023-05-01 18:08:04,639] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:08:04] "GET /index HTTP/1.1" 200 -
+[2023-05-01 18:08:04,712] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:08:04] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-05-01 18:08:06,032] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:08:06] "GET /cam HTTP/1.1" 200 -
+[2023-05-01 18:08:06,090] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:08:06] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-01 18:08:10,552] 1414 application - ERROR - Exception on /close_cam [POST]
+Traceback (most recent call last):
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\src\pipeline\song_predictor.py", line 20, in recommender
+    playlist_URI = playlist_link.split("/")[-1].split("?")[0]
+UnboundLocalError: local variable 'playlist_link' referenced before assignment
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "application.py", line 38, in close_camera
+    songs=sp.track(recommender(emotion,prefer))
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\src\pipeline\song_predictor.py", line 62, in recommender
+    raise CustomException(e,sys)
+src.exception.CustomException: Error occured in python script name [C:\Users\KIIT\Documents\GitHub\Music-Recommendation\src\pipeline\song_predictor.py] line number [20] error message[local variable 'playlist_link' referenced before assignment]
+[2023-05-01 18:08:10,556] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:08:10] "[35m[1mPOST /close_cam HTTP/1.1[0m" 500 -
+[2023-05-01 18:08:10,673] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:08:10] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-01 18:08:29,819] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:08:29] "GET /cam HTTP/1.1" 200 -
+[2023-05-01 18:08:29,896] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:08:29] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-01 18:08:32,942] 1414 application - ERROR - Exception on /close_cam [POST]
+Traceback (most recent call last):
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\src\pipeline\song_predictor.py", line 20, in recommender
+    playlist_URI = playlist_link.split("/")[-1].split("?")[0]
+UnboundLocalError: local variable 'playlist_link' referenced before assignment
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "application.py", line 38, in close_camera
+    songs=sp.track(recommender(emotion,prefer))
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\src\pipeline\song_predictor.py", line 62, in recommender
+    raise CustomException(e,sys)
+src.exception.CustomException: Error occured in python script name [C:\Users\KIIT\Documents\GitHub\Music-Recommendation\src\pipeline\song_predictor.py] line number [20] error message[local variable 'playlist_link' referenced before assignment]
+[2023-05-01 18:08:32,944] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:08:32] "[35m[1mPOST /close_cam HTTP/1.1[0m" 500 -
+[2023-05-01 18:08:33,061] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:08:33] "GET /favicon.ico HTTP/1.1" 200 -

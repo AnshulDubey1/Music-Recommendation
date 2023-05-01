@@ -30,10 +30,12 @@ def execute_camera():
 def index():
     return render_template('index.html')
 
-@app.route('/close_cam')
+@app.route('/close_cam',methods=['POST'])
 def close_camera():
+    prefer = request.form['mySelect']
+    print(prefer)
     emotion=emotion_average("artifacts\Registered_emotions.txt")
-    songs=sp.track(recommender(emotion))
+    songs=sp.track(recommender(emotion,prefer))
     return render_template('suggestion1.html', track=songs)
 
 @app.errorhandler(404)
@@ -41,4 +43,4 @@ def page_not_found(error):
     return render_template('error.html')
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8080)
+    app.run(host="0.0.0.0", port=8000)

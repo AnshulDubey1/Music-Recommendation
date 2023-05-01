@@ -1,0 +1,17 @@
+[2023-05-01 15:42:42,409] 186 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.5.170.168:8000
+[2023-05-01 15:42:42,410] 186 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2023-05-01 15:42:57,359] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 15:42:57] "GET /close_cam HTTP/1.1" 200 -
+[2023-05-01 15:42:57,425] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 15:42:57] "[36mGET /static/css/suggestion1.css HTTP/1.1[0m" 304 -
+[2023-05-01 15:42:57,582] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 15:42:57] "[36mGET /static/Js/suggestion1.js HTTP/1.1[0m" 304 -
+[2023-05-01 15:42:57,960] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 15:42:57] "GET /static/css/Images/background.jpg HTTP/1.1" 200 -
+[2023-05-01 15:42:58,024] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 15:42:58] "GET /None HTTP/1.1" 200 -
+[2023-05-01 15:42:58,030] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 15:42:58] "GET /audioSrc HTTP/1.1" 200 -
+[2023-05-01 15:42:58,148] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 15:42:58] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-01 15:43:15,840] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 15:43:15] "GET /close_cam HTTP/1.1" 200 -
+[2023-05-01 15:43:15,897] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 15:43:15] "[36mGET /static/css/suggestion1.css HTTP/1.1[0m" 304 -
+[2023-05-01 15:43:15,935] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 15:43:15] "[36mGET /static/Js/suggestion1.js HTTP/1.1[0m" 304 -
+[2023-05-01 15:43:15,976] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 15:43:15] "GET /audioSrc HTTP/1.1" 200 -
+[2023-05-01 15:43:16,259] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 15:43:16] "GET /favicon.ico HTTP/1.1" 200 -

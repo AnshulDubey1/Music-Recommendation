@@ -29,7 +29,7 @@
 
         <nav class="navbar navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="https://open.spotify.com/" target="_blank">
+                <a class="navbar-brand" href="{{track['uri']}}" target="_blank">
                     <i class="fa-brands fa-spotify fa-2xl" style="color: #ffffff;"></i>
                     <sup>PLAYING FROM ALBUM</sup>
                     <br>
@@ -57,7 +57,7 @@
         </div>
     </div>
     <center>
-    <audio controls>
+    <audio id="audioElement">
         <source src="{{ track['preview_url'] }}" type="audio/mpeg">
     </audio>
 </center>
@@ -71,6 +71,12 @@
 
         </div>
     </div>
+    <script>
+        let songIndex = 0;
+        let audioElement = new Audio( <source src="{{ track['preview_url'] }}" type="audio/mpeg">);
+        let masterPlay = document.getElementById('masterPlay');
+        let myProgressBar = document.getElementById('myProgressBar');
+    </script>
 </div>
     <script src="{{ url_for('static', filename='Js/suggestion1.js') }}"></script>
 </body>

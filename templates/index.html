@@ -93,43 +93,43 @@
                                 <li>Satyajeet</li>
                             </ul>
                         </div>
-                        <div class="col-md-8">
-                            <button type="button" class="btn btn-secondary btn-lg btn-outline-dark btn_style">
-                                <div class="container text-center">
-                                    <div class="row git_btn">
-                                        <div class="col">
-                                            <i class="fa-brands fa-github fa-flip fa-2xl"></i>
-                                            View on GitHub
-                                        </div>
+                        <div class="col-md-8 hidden">
+                            <a class="btn_style" href="https://github.com/AnshulDubey1/Music-Recommendation"
+                                target="_blank">
+                                <button type="button" class="btn btn-secondary btn-lg btn-outline-dark">
+                                    <div class="container text-center">
+                                        <div class="row git_btn">
+                                            <div class="col">
+                                                <i class="fa-brands fa-github fa-flip fa-2xl"></i>
+                                                View on GitHub
+                                            </div>
 
-                                    </div>
-                            </button>
-                        </div>
+                                        </div>
+                                </button></a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <img src="{{ url_for('execute_camera') }}" width='100%'>
             </div>
+            <div class="dropdown hidden">
+                <form action="{{ url_for('close_camera') }}" method="post">
+                    <select id="mySelect" class="form-select" name="mySelect" aria-label="Preference">
+                        <label>Preference</label>
+                      <option selected disabled>SELECT</option>
+                      <option value="1">HINDI</option>
+                      <option value="2">GLOBAL</option>
+                    </select>
+                    <br><br>
+                    <input class="btn btn-secondary btn-outline-dark" type="submit" value="SUBMIT">
+                  </form>
+
+            </div>
         </div>
 
-        <h2 class="cam_sec">EMOTION RECOGNIZER</h2>
 
-            <a href="#" class="btn btn-secondary btn-outline-dark btn_predict" id="learn-more-btn" role="button">PREDICT</a>
 
-        <script>
-            // Get the current hostname and port
-            const host = window.location.hostname;
-            const port = window.location.port;
-    
-            // Construct the URL for the "Learn More" button
-            const url = `http://${host}:${port}/close_cam`;
-    
-            // Get a reference to the "Learn More" button
-            const learnMoreBtn = document.getElementById("learn-more-btn");
-    
-            // Set the button's URL
-            learnMoreBtn.href = url;
-        </script>
+        
 </body>
 </html>

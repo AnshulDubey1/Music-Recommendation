@@ -1,0 +1,38 @@
+[2023-05-01 16:08:47,041] 186 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.5.170.168:8000
+[2023-05-01 16:08:47,042] 186 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2023-05-01 16:09:30,946] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:09:30] "GET /close_cam HTTP/1.1" 200 -
+[2023-05-01 16:09:31,007] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:09:31] "[36mGET /static/css/suggestion1.css HTTP/1.1[0m" 304 -
+[2023-05-01 16:09:31,034] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:09:31] "[36mGET /static/Js/suggestion1.js HTTP/1.1[0m" 304 -
+[2023-05-01 16:09:31,333] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:09:31] "GET /static/css/Images/background.jpg HTTP/1.1" 200 -
+[2023-05-01 16:09:31,641] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:09:31] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-01 16:10:16,051] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:10:16] "GET /close_cam HTTP/1.1" 200 -
+[2023-05-01 16:10:16,123] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:10:16] "[36mGET /static/css/suggestion1.css HTTP/1.1[0m" 304 -
+[2023-05-01 16:10:16,157] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:10:16] "[36mGET /static/Js/suggestion1.js HTTP/1.1[0m" 304 -
+[2023-05-01 16:10:16,186] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:10:16] "GET /static/css/Images/background.jpg HTTP/1.1" 200 -
+[2023-05-01 16:10:16,456] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:10:16] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-01 16:11:20,270] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:11:20] "GET /close_cam HTTP/1.1" 200 -
+[2023-05-01 16:11:20,338] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:11:20] "[36mGET /static/css/suggestion1.css HTTP/1.1[0m" 304 -
+[2023-05-01 16:11:20,373] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:11:20] "[36mGET /static/Js/suggestion1.js HTTP/1.1[0m" 304 -
+[2023-05-01 16:11:20,663] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:11:20] "GET /static/css/Images/background.jpg HTTP/1.1" 200 -
+[2023-05-01 16:11:20,772] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:11:20] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-01 16:12:38,035] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:12:38] "GET / HTTP/1.1" 200 -
+[2023-05-01 16:12:38,132] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:12:38] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-05-01 16:12:38,151] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:12:38] "[36mGET /static/Images/Satyajeet.jpg HTTP/1.1[0m" 304 -
+[2023-05-01 16:12:38,153] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:12:38] "[36mGET /static/Images/Anshul.jpg HTTP/1.1[0m" 304 -
+[2023-05-01 16:12:38,157] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:12:38] "[36mGET /static/Images/Shruti.jpg HTTP/1.1[0m" 304 -
+[2023-05-01 16:12:38,169] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:12:38] "[36mGET /static/Images/Shahil.jpg HTTP/1.1[0m" 304 -
+[2023-05-01 16:12:38,539] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:12:38] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-01 16:12:41,769] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:12:41] "GET /index HTTP/1.1" 200 -
+[2023-05-01 16:12:41,838] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:12:41] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-05-01 16:12:43,281] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:12:43] "GET /cam HTTP/1.1" 200 -
+[2023-05-01 16:12:44,377] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:12:44] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-01 16:12:57,026] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:12:57] "GET /close_cam HTTP/1.1" 200 -
+[2023-05-01 16:12:57,117] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:12:57] "[36mGET /static/css/suggestion1.css HTTP/1.1[0m" 304 -
+[2023-05-01 16:12:57,145] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:12:57] "[36mGET /static/Js/suggestion1.js HTTP/1.1[0m" 304 -
+[2023-05-01 16:12:57,197] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:12:57] "GET /static/css/Images/background.jpg HTTP/1.1" 200 -
+[2023-05-01 16:12:57,476] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:12:57] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-01 16:13:17,431] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:13:17] "GET /cam HTTP/1.1" 200 -
+[2023-05-01 16:13:17,643] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 16:13:17] "GET /favicon.ico HTTP/1.1" 200 -
