@@ -34,7 +34,7 @@ def index():
 def close_camera():
     emotion=emotion_average("artifacts\Registered_emotions.txt")
     songs=sp.track(recommender(emotion))
-    return render_template('suggestion.html', track=songs)
+    return render_template('suggestion1.html', track=songs)
 
 @app.errorhandler(404)
 def page_not_found(error):

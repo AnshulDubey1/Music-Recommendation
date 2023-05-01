@@ -1,0 +1,19 @@
+[2023-05-01 14:50:56,576] 186 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.5.170.168:8000
+[2023-05-01 14:50:56,576] 186 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2023-05-01 14:51:13,913] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 14:51:13] "GET /close_cam HTTP/1.1" 200 -
+[2023-05-01 14:51:13,986] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 14:51:13] "[36mGET /static/css/suggestion1.css HTTP/1.1[0m" 304 -
+[2023-05-01 14:51:14,031] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 14:51:14] "[36mGET /static/Js/suggestion1.js HTTP/1.1[0m" 304 -
+[2023-05-01 14:51:14,402] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 14:51:14] "GET /static/css/Images/background.jpg HTTP/1.1" 200 -
+[2023-05-01 14:51:14,409] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 14:51:14] "GET /None HTTP/1.1" 200 -
+[2023-05-01 14:51:14,417] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 14:51:14] "GET /audioSrc HTTP/1.1" 200 -
+[2023-05-01 14:51:14,474] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 14:51:14] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-01 14:52:53,769] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 14:52:53] "GET /close_cam HTTP/1.1" 200 -
+[2023-05-01 14:52:53,858] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 14:52:53] "GET /static/css/suggestion1.css HTTP/1.1" 200 -
+[2023-05-01 14:52:53,892] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 14:52:53] "[36mGET /static/Js/suggestion1.js HTTP/1.1[0m" 304 -
+[2023-05-01 14:52:54,262] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 14:52:54] "GET /static/css/Images/background.jpg HTTP/1.1" 200 -
+[2023-05-01 14:52:54,276] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 14:52:54] "GET /None HTTP/1.1" 200 -
+[2023-05-01 14:52:54,282] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 14:52:54] "GET /audioSrc HTTP/1.1" 200 -
+[2023-05-01 14:52:54,333] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 14:52:54] "GET /favicon.ico HTTP/1.1" 200 -

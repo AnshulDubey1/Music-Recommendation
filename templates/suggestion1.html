@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/suggestion1.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Carlito&family=Lora&family=Merriweather&family=Ubuntu:wght@500&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/80bc2d3e11.js" crossorigin="anonymous"></script>
+    <script>
+        var previewUrl = "{{ track.preview_url }}";
+    </script>
+
+</head>
+
+<body>
+<div id="bg">
+    <img class="album-img-bg" src="{{ track['album']['images'][0]['url'] }}" alt="img">
+    <div class="background-album">
+
+
+        <nav class="navbar navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://open.spotify.com/" target="_blank">
+                    <i class="fa-brands fa-spotify fa-2xl" style="color: #ffffff;"></i>
+                    <sup>PLAYING FROM ALBUM</sup>
+                    <br>
+                    <sub class="album-name"><b>{{ track['album']['name'] }}</b></sub>
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link
+                        href="https://fonts.googleapis.com/css2?family=Carlito&family=Lora&family=Merriweather&family=Ubuntu:wght@500&display=swap"
+                        rel="stylesheet">
+                </a>
+
+            </div>
+        </nav>
+
+        <div class="container1 hidden">
+
+            <img class="album-img" src="{{ track['album']['images'][0]['url'] }}" alt="img">
+            <div class="song-name">
+                {{ track['name'] }}
+            </div>
+            <div class="artist-name">
+                {{ track['artists'][0]['name'] }}
+            </div>
+
+        </div>
+    </div>
+    <center>
+    <audio controls>
+        <source src="{{ track['preview_url'] }}" type="audio/mpeg">
+    </audio>
+</center>
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100" class="slider">
+        <span class="current-time">00:00</span>
+        <span class="song-duration">00:00</span>
+        <div class=" fav-icons">
+
+            <i id="masterPlay" class="fa-solid fa-play fa-2xl icons" style="color: #ffffff;"></i>
+
+        </div>
+    </div>
+</div>
+    <script src="{{ url_for('static', filename='Js/suggestion1.js') }}"></script>
+</body>
+
+</html>

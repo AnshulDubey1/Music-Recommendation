@@ -1,0 +1,64 @@
+[2023-04-30 20:03:58,661] 186 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.5.170.168:8000
+[2023-04-30 20:03:58,661] 186 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2023-04-30 20:04:03,541] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 20:04:03] "GET / HTTP/1.1" 200 -
+[2023-04-30 20:04:03,601] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 20:04:03] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-04-30 20:04:03,614] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 20:04:03] "[36mGET /static/Images/Anshul.jpg HTTP/1.1[0m" 304 -
+[2023-04-30 20:04:03,616] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 20:04:03] "[36mGET /static/Images/Satyajeet.jpg HTTP/1.1[0m" 304 -
+[2023-04-30 20:04:03,617] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 20:04:03] "[36mGET /static/Images/Shahil.jpg HTTP/1.1[0m" 304 -
+[2023-04-30 20:04:03,619] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 20:04:03] "[36mGET /static/Images/Shruti.jpg HTTP/1.1[0m" 304 -
+[2023-04-30 20:04:29,108] 1414 application - ERROR - Exception on /close_cam [GET]
+Traceback (most recent call last):
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "application.py", line 38, in close_camera
+    return render_template('suggestion.html', track=songs,artist=artist)
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\templating.py", line 132, in _render
+    rv = template.render(context)
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\templates\suggestion.html", line 22, in top-level template code
+    <img class="rounded small" src="{{ artist['images'][0]['url']}}" alt="Album cover">
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\jinja2\environment.py", line 466, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'dict object' has no attribute 'images'
+[2023-04-30 20:04:29,115] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 20:04:29] "[35m[1mGET /close_cam HTTP/1.1[0m" 500 -
+[2023-04-30 20:04:50,059] 1414 application - ERROR - Exception on /close_cam [GET]
+Traceback (most recent call last):
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "application.py", line 38, in close_camera
+    return render_template('suggestion.html', track=songs,artist=artist)
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\templating.py", line 132, in _render
+    rv = template.render(context)
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\templates\suggestion.html", line 22, in top-level template code
+    <img class="rounded small" src="{{ artist['images'][0]['url']}}" alt="Album cover">
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\jinja2\environment.py", line 466, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'dict object' has no attribute 'images'
+[2023-04-30 20:04:50,061] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 20:04:50] "[35m[1mGET /close_cam HTTP/1.1[0m" 500 -
+[2023-04-30 20:04:50,418] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 20:04:50] "GET /favicon.ico HTTP/1.1" 200 -

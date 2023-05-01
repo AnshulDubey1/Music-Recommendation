@@ -1,0 +1,32 @@
+[2023-04-30 19:59:04,025] 186 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.5.170.168:8000
+[2023-04-30 19:59:04,025] 186 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2023-04-30 19:59:31,423] 1414 application - ERROR - Exception on /close_cam [GET]
+Traceback (most recent call last):
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "application.py", line 37, in close_camera
+    return render_template('suggestion.html', track=songs)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\templating.py", line 132, in _render
+    rv = template.render(context)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\templates\suggestion.html", line 22, in top-level template code
+    <img class="rounded small" src="{{ track['artists']['items'][0]['images'][0]['url'] }}" alt="Album cover">
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\jinja2\environment.py", line 466, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'items'
+[2023-04-30 19:59:31,432] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 19:59:31] "[35m[1mGET /close_cam HTTP/1.1[0m" 500 -
+[2023-04-30 19:59:31,573] 186 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2023 19:59:31] "GET /favicon.ico HTTP/1.1" 200 -
