@@ -1,5 +1,7 @@
-body{
+body {
+   
     background-color: #000000;
+    
 }
 
 .nav-color{
@@ -10,70 +12,94 @@ body{
     color: white;
 }
 
+.spotify{
+    font-size: 25px;
+}
 
-.container{
-    margin-top: 20px;
+h3{
+    color: white;
+    font-family: 'Merriweather', sans-serif;
+    margin-top: 15px;
+    margin-left: 140px;
 }
 
 .img1{
-    height: 300px;
-    width: 260px;
-    border-radius: 40%;
-    border: 5px solid white;
+    height: 150px;
+    width: 140px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 150px;
+    
 }
+
 .img2{
-     height: 300px;
-     width: 260px;
-     border-radius: 40%;
-     margin-right: 10px;
-     border: 5px solid white;
+    height: 150px;
+    width: 140px;
+    border-radius: 50%;
+    margin-left: 150px;
+    
 }
+
 .img3{
-    height: 300px;
-    width: 260px;
-    /* margin-left: 10px; */
-    border-radius: 40%;
-    border: 5px solid white;
+    height: 150px;
+    width: 140px;
+    border-radius: 50%;
+    margin-left: 150px;
+    
 }
+
 .img4{
-     height: 300px;
-     width: 260px;
-     /* margin-left: 20px; */
-     border-radius: 40%;
-     border: 5px solid white
+    height: 150px;
+    width: 140px;
+    border-radius: 50%;
+    margin-left: 150px;
+    
 }
-.image-overlay{
-    position: absolute;
-    border-radius: 40%;
-    top: 76px;
-    height: 295px;
-    width: 260px;
-    background: rgba(0, 0, 0, 0.6);
+
+.anshul{
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    opacity: 0;
-    transition: opacity 0.25s ;
+    margin-top: 10px;
+    margin-left: 165px;
+}
+.shruti{
+    color: white;
+    margin-top: 10px;
+    margin-left: 140px;
+}
+.shahil{
+    color: white;
+    margin-top: 10px;
+    margin-left: 140px;
+}
+.satyajeet{
+    color: white;
+    margin-top: 10px;
+    margin-left: 162px;
+}
+h2{
+    padding: 10px 0 0 20px;
+    color: white;
+    font-family: 'Carlito', serif;
+}
+.project-details{
+    padding: 10px 0 0 20px;
+    color: white;
+    text-align: justify;
+    
 }
 
-.image-overlay > * {
-    transform: translateY(20px);
-    transition: transform 0.25s;
+.features{
+    color: white;
+    font-family: 'Carlito', serif;
 }
 
-.image-overlay:hover > * {
-    transform: translateY(0);
+.sec1{
+    color: white;
+    padding: 5rem 0 0 7rem;
 }
 
-.image-overlay:hover{
-    opacity: 1;
-}
-
-.image-title{
-    padding-top: 115px;
-    font-size: 2rem;
+.main-title{
+    font-family: 'Merriweather', sans-serif;
 }
 
 h1{
@@ -91,7 +117,7 @@ h1{
     font-family: 'Carlito', sans-serif;
 }
 .git_btn{
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -103,4 +129,89 @@ h1{
 .btn_predict{
     padding-top: 10px;
     font-family: 'Ubuntu', sans-serif;
+}
+
+.container1{
+    min-height: 70vh;
+}
+
+
+#myProgressBar{
+        width: 80vw;
+    border-radius: 20px;
+    height: 5px;
+    
+}
+.icons{
+    margin: 10px;
+}
+.fav-icons{
+    margin: 25px 0 0 0;
+}
+.fav-icons i{
+    cursor: pointer
+}
+.bottom{
+    position: sticky;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  height: 5px;
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  border-radius: 50%;
+  width: 15px; /* Set a specific slider handle width */
+  height: 15px; /* Slider handle height */
+  background: #1CCC5B; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 15px; /* Slider handle height */
+  background: #1CCC5B; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.album-img{
+    height: 20%;
+    width: 20%;
+    position: relative;
+    top: 170px;
+    left: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px black;
+}
+
+.dropdown{
+    padding-top: 10px;
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 2s;
+}
+.show{
+    opacity: 1;
 }

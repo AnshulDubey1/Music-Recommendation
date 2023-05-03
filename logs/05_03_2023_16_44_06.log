@@ -1,0 +1,118 @@
+[2023-05-03 16:44:12,591] 186 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.139.174:8000
+[2023-05-03 16:44:12,591] 186 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2023-05-03 16:44:21,702] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:21] "GET / HTTP/1.1" 200 -
+[2023-05-03 16:44:21,799] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:21] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-05-03 16:44:21,887] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:21] "[36mGET /static/Js/home.js HTTP/1.1[0m" 304 -
+[2023-05-03 16:44:21,895] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:21] "[36mGET /static/Images/Anshul.jpg HTTP/1.1[0m" 304 -
+[2023-05-03 16:44:21,898] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:21] "[36mGET /static/Images/Shruti.jpg HTTP/1.1[0m" 304 -
+[2023-05-03 16:44:21,903] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:21] "[36mGET /static/Images/Shahil.jpg HTTP/1.1[0m" 304 -
+[2023-05-03 16:44:21,905] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:21] "[36mGET /static/Images/Satyajeet.jpg HTTP/1.1[0m" 304 -
+[2023-05-03 16:44:30,001] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:30] "GET /index HTTP/1.1" 200 -
+[2023-05-03 16:44:30,072] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:30] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-05-03 16:44:30,077] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:30] "[36mGET /static/Js/home.js HTTP/1.1[0m" 304 -
+[2023-05-03 16:44:33,290] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:33] "GET /cam HTTP/1.1" 200 -
+[2023-05-03 16:44:33,664] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:33] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-03 16:44:42,266] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:42] "GET / HTTP/1.1" 200 -
+[2023-05-03 16:44:42,378] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:42] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-05-03 16:44:42,387] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:42] "[36mGET /static/Js/home.js HTTP/1.1[0m" 304 -
+[2023-05-03 16:44:42,406] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:42] "[36mGET /static/Images/Anshul.jpg HTTP/1.1[0m" 304 -
+[2023-05-03 16:44:42,415] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:42] "[36mGET /static/Images/Shruti.jpg HTTP/1.1[0m" 304 -
+[2023-05-03 16:44:42,421] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:42] "[36mGET /static/Images/Shahil.jpg HTTP/1.1[0m" 304 -
+[2023-05-03 16:44:42,428] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:42] "[36mGET /static/Images/Satyajeet.jpg HTTP/1.1[0m" 304 -
+[2023-05-03 16:44:44,504] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:44] "GET /index HTTP/1.1" 200 -
+[2023-05-03 16:44:44,590] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:44] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-05-03 16:44:44,600] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:44] "[36mGET /static/Js/home.js HTTP/1.1[0m" 304 -
+[2023-05-03 16:44:44,904] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:44] "GET /cam HTTP/1.1" 200 -
+[2023-05-03 16:44:45,262] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:45] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-03 16:44:47,422] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:47] "GET / HTTP/1.1" 200 -
+[2023-05-03 16:44:47,515] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:47] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-05-03 16:44:47,528] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:47] "[36mGET /static/Js/home.js HTTP/1.1[0m" 304 -
+[2023-05-03 16:44:47,535] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:47] "[36mGET /static/Images/Anshul.jpg HTTP/1.1[0m" 304 -
+[2023-05-03 16:44:47,539] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:47] "[36mGET /static/Images/Shruti.jpg HTTP/1.1[0m" 304 -
+[2023-05-03 16:44:47,544] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:47] "[36mGET /static/Images/Shahil.jpg HTTP/1.1[0m" 304 -
+[2023-05-03 16:44:47,556] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:47] "[36mGET /static/Images/Satyajeet.jpg HTTP/1.1[0m" 304 -
+[2023-05-03 16:44:54,905] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:54] "GET /index HTTP/1.1" 200 -
+[2023-05-03 16:44:54,974] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:54] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-05-03 16:44:54,987] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:54] "[36mGET /static/Js/home.js HTTP/1.1[0m" 304 -
+[2023-05-03 16:44:55,307] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:55] "GET /cam HTTP/1.1" 200 -
+[2023-05-03 16:44:55,659] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:44:55] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-03 16:45:36,694] 1414 application - ERROR - Exception on /close_cam [POST]
+Traceback (most recent call last):
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\urllib3\connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\urllib3\connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\http\client.py", line 1322, in getresponse
+    response.begin()
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\http\client.py", line 303, in begin
+    version, status, reason = self._read_status()
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\http\client.py", line 264, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\requests\adapters.py", line 487, in send
+    resp = conn.urlopen(
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\urllib3\util\retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\urllib3\packages\six.py", line 770, in reraise
+    raise value
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\urllib3\connectionpool.py", line 451, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\urllib3\connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.spotify.com', port=443): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\src\pipeline\song_predictor.py", line 29, in recommender
+    audio_features = sp.audio_features(track['id'])[0]
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\spotipy\client.py", line 1734, in audio_features
+    results = self._get("audio-features/?ids=" + trackid)
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\spotipy\client.py", line 323, in _get
+    return self._internal_call("GET", url, payload, kwargs)
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\spotipy\client.py", line 266, in _internal_call
+    response = self._session.request(
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\requests\adapters.py", line 533, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.spotify.com', port=443): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "application.py", line 37, in close_camera
+    songs=sp.track(recommender(emotion,prefer))
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\src\pipeline\song_predictor.py", line 62, in recommender
+    raise CustomException(e,sys)
+src.exception.CustomException: Error occured in python script name [C:\Users\KIIT\Documents\GitHub\Music-Recommendation\src\pipeline\song_predictor.py] line number [29] error message[HTTPSConnectionPool(host='api.spotify.com', port=443): Read timed out. (read timeout=5)]
+[2023-05-03 16:45:36,761] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:45:36] "[35m[1mPOST /close_cam HTTP/1.1[0m" 500 -
+[2023-05-03 16:45:36,897] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:45:36] "GET /favicon.ico HTTP/1.1" 200 -

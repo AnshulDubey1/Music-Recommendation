@@ -33,7 +33,6 @@ def index():
 @app.route('/close_cam',methods=['POST'])
 def close_camera():
     prefer = request.form['mySelect']
-    print(prefer)
     emotion=emotion_average("artifacts\Registered_emotions.txt")
     songs=sp.track(recommender(emotion,prefer))
     return render_template('suggestion1.html', track=songs)

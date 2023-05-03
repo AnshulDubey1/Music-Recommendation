@@ -1,0 +1,96 @@
+[2023-05-03 16:47:14,256] 186 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.139.174:8000
+[2023-05-03 16:47:14,256] 186 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2023-05-03 16:47:21,129] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:47:21] "[31m[1mGET /close_cam HTTP/1.1[0m" 405 -
+[2023-05-03 16:47:21,252] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:47:21] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-03 16:47:25,164] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:47:25] "[31m[1mGET /close_cam HTTP/1.1[0m" 405 -
+[2023-05-03 16:47:25,254] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:47:25] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-03 16:47:28,905] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:47:28] "[31m[1mGET /close_cam HTTP/1.1[0m" 405 -
+[2023-05-03 16:47:28,991] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:47:28] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-03 16:48:04,067] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:48:04] "[31m[1mGET /close_cam HTTP/1.1[0m" 405 -
+[2023-05-03 16:48:04,173] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:48:04] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-03 16:48:08,053] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:48:08] "GET /cam HTTP/1.1" 200 -
+[2023-05-03 16:48:08,240] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:48:08] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-03 16:48:40,894] 1414 application - ERROR - Exception on /close_cam [POST]
+Traceback (most recent call last):
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\urllib3\connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\urllib3\connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\http\client.py", line 1322, in getresponse
+    response.begin()
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\http\client.py", line 303, in begin
+    version, status, reason = self._read_status()
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\http\client.py", line 264, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\requests\adapters.py", line 487, in send
+    resp = conn.urlopen(
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\urllib3\util\retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\urllib3\packages\six.py", line 770, in reraise
+    raise value
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\urllib3\connectionpool.py", line 451, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\urllib3\connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.spotify.com', port=443): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\src\pipeline\song_predictor.py", line 29, in recommender
+    audio_features = sp.audio_features(track['id'])[0]
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\spotipy\client.py", line 1734, in audio_features
+    results = self._get("audio-features/?ids=" + trackid)
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\spotipy\client.py", line 323, in _get
+    return self._internal_call("GET", url, payload, kwargs)
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\spotipy\client.py", line 266, in _internal_call
+    response = self._session.request(
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\requests\adapters.py", line 533, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.spotify.com', port=443): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\KIIT\Documents\GitHub\Music-Recommendation\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "application.py", line 37, in close_camera
+    songs=sp.track(recommender(emotion,prefer))
+  File "C:\Users\KIIT\Documents\GitHub\Music-Recommendation\src\pipeline\song_predictor.py", line 62, in recommender
+    raise CustomException(e,sys)
+src.exception.CustomException: Error occured in python script name [C:\Users\KIIT\Documents\GitHub\Music-Recommendation\src\pipeline\song_predictor.py] line number [29] error message[HTTPSConnectionPool(host='api.spotify.com', port=443): Read timed out. (read timeout=5)]
+[2023-05-03 16:48:40,913] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:48:40] "[35m[1mPOST /close_cam HTTP/1.1[0m" 500 -
+[2023-05-03 16:48:41,057] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:48:41] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-03 16:50:13,274] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:50:13] "GET /cam HTTP/1.1" 200 -
+[2023-05-03 16:50:13,449] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:50:13] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-03 16:55:41,933] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:55:41] "GET /cam HTTP/1.1" 200 -
+[2023-05-03 16:55:42,027] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:55:42] "GET /favicon.ico HTTP/1.1" 200 -

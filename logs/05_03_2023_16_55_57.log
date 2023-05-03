@@ -1,0 +1,42 @@
+[2023-05-03 16:56:12,591] 186 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.139.174:8000
+[2023-05-03 16:56:12,591] 186 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2023-05-03 16:56:12,684] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:56:12] "GET / HTTP/1.1" 200 -
+[2023-05-03 16:56:12,877] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:56:12] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-05-03 16:56:12,879] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:56:12] "[36mGET /static/Js/home.js HTTP/1.1[0m" 304 -
+[2023-05-03 16:56:12,882] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:56:12] "[36mGET /static/Images/Anshul.jpg HTTP/1.1[0m" 304 -
+[2023-05-03 16:56:12,890] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:56:12] "[36mGET /static/Images/Shruti.jpg HTTP/1.1[0m" 304 -
+[2023-05-03 16:56:12,922] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:56:12] "[36mGET /static/Images/Shahil.jpg HTTP/1.1[0m" 304 -
+[2023-05-03 16:56:12,924] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:56:12] "[36mGET /static/Images/Satyajeet.jpg HTTP/1.1[0m" 304 -
+[2023-05-03 16:56:16,613] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:56:16] "GET /index HTTP/1.1" 200 -
+[2023-05-03 16:56:16,706] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:56:16] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-05-03 16:56:16,711] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:56:16] "[36mGET /static/Js/home.js HTTP/1.1[0m" 304 -
+[2023-05-03 16:56:17,955] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:56:17] "GET /cam HTTP/1.1" 200 -
+[2023-05-03 16:56:23,666] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 16:56:23] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-03 17:03:39,123] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 17:03:39] "POST /close_cam HTTP/1.1" 200 -
+[2023-05-03 17:03:39,219] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 17:03:39] "[36mGET /static/css/suggestion1.css HTTP/1.1[0m" 304 -
+[2023-05-03 17:03:39,264] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 17:03:39] "[36mGET /static/Js/suggestion1.js HTTP/1.1[0m" 304 -
+[2023-05-03 17:03:39,980] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 17:03:39] "GET /static/css/Images/background.jpg HTTP/1.1" 200 -
+[2023-05-03 17:03:54,900] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 17:03:54] "[36mGET /static/Images/icon.png HTTP/1.1[0m" 304 -
+[2023-05-03 17:04:05,984] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 17:04:05] "GET /cam HTTP/1.1" 200 -
+[2023-05-03 17:04:06,079] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 17:04:06] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-03 17:04:57,577] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 17:04:57] "POST /close_cam HTTP/1.1" 200 -
+[2023-05-03 17:04:57,695] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 17:04:57] "[36mGET /static/css/suggestion1.css HTTP/1.1[0m" 304 -
+[2023-05-03 17:04:57,732] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 17:04:57] "[36mGET /static/Js/suggestion1.js HTTP/1.1[0m" 304 -
+[2023-05-03 17:04:58,561] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 17:04:58] "GET /static/css/Images/background.jpg HTTP/1.1" 200 -
+[2023-05-03 17:05:09,499] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 17:05:09] "[36mGET /static/Images/icon.png HTTP/1.1[0m" 304 -
+[2023-05-03 17:06:26,349] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 17:06:26] "GET /cam HTTP/1.1" 200 -
+[2023-05-03 17:06:26,447] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 17:06:26] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-03 17:06:50,140] 186 werkzeug - ERROR - 127.0.0.1 - - [03/May/2023 17:06:50] code 400, message Bad request version ('ÜË©\x0eK»ËÖwé+ù\x16·1lï.C\x82zVx\x9a\x98\x00ø»©]Rc\x00"úú\x13\x01\x13\x02\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x91')
+[2023-05-03 17:06:50,141] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 17:06:50] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03e{#s\x80Z\x0e \x81\x91^è%ôå\x97R\x14ªÁ!p\x9bp"ÂY\x15\x01lÓØ ÜË©\x0eK»ËÖwé+ù\x16·1lï.C\x82zVx\x9a\x98\x00ø»©]Rc\x00"úú\x13\x01\x13\x02\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x91[0m" HTTPStatus.BAD_REQUEST -
+[2023-05-03 17:06:50,145] 186 werkzeug - ERROR - 127.0.0.1 - - [03/May/2023 17:06:50] code 400, message Bad request version ('\x00+\x00\x07\x06jj\x03\x04\x03\x03\x00#\x00\x00\x00\x17\x00\x00\x00')
+[2023-05-03 17:06:50,146] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 17:06:50] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03Û\x7fÿ©\x8d\x09ãBw\x0cU\x00³A0¿\x0bxÈ\x01$x£%cº\x0f6"\x07,ô ÌëÈ.yl»'vÊÍ\x9b`íQAyQv\x8eÜe\x1cüË¸! ê\x15\x9cµ\x00"**\x13\x01\x13\x02\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x91úú\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00\x003\x00+\x00)jj\x00\x01\x00\x00\x1d\x00 jz©&|@Ã±øñø\x1cÈ\x1e'sæ3ÿ\x9c¦ñ\x96\x8dr<1Y\x13\x8dØ \x00+\x00\x07\x06jj\x03\x04\x03\x03\x00#\x00\x00\x00\x17\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+[2023-05-03 17:06:52,274] 186 werkzeug - ERROR - 127.0.0.1 - - [03/May/2023 17:06:52] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00+\x00\x07\x06JJ\x03\x04\x03\x03Di\x00\x05\x00\x03\x02h2\x00')
+[2023-05-03 17:06:52,274] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 17:06:52] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x080¿!*(dP­¾4¸âáÍäPåÆú¡mº cZVÙý¼ä  jãx\x81\x91Äw(¼>ìBq§ºZ¯øº\x07ÙÚªã+µÚº\x9cýq\x11\x00"zz\x13\x01\x13\x02\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x91ÊÊ\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x003\x00+\x00)ÚÚ\x00\x01\x00\x00\x1d\x00 \x83\x0b\x90Ñ\x05(d^å±ëL¿÷\x14âêES¢\x8dïP'\x06s¹côí¤a\x00-\x00\x02\x01\x01\x00#\x00\x00\x00\x12\x00\x00ÿ\x01\x00\x01\x00\x00\x17\x00\x00\x00\x0b\x00\x02\x01\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00+\x00\x07\x06JJ\x03\x04\x03\x03Di\x00\x05\x00\x03\x02h2\x00[0m" HTTPStatus.BAD_REQUEST -
+[2023-05-03 17:06:52,278] 186 werkzeug - ERROR - 127.0.0.1 - - [03/May/2023 17:06:52] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x9aP3Q')
+[2023-05-03 17:06:52,278] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 17:06:52] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x9aP3Q[0m" HTTPStatus.BAD_REQUEST -
+[2023-05-03 17:07:11,346] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 17:07:11] "GET /cam HTTP/1.1" 200 -
+[2023-05-03 17:07:27,677] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 17:07:27] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-03 17:07:58,101] 186 werkzeug - INFO - 127.0.0.1 - - [03/May/2023 17:07:58] "GET /cam HTTP/1.1" 200 -

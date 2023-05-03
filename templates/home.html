@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>EBMRS</title>
 
+    <title>GMINOR</title>
+    <link rel="icon" href="{{url_for('static', filename='Images/icon.png')}}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
@@ -48,81 +49,106 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="{{url_for('home')}}">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link style=" color: black;" href="{{url_for('index')}}">Camera</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex mt-3" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
                 </div>
             </div>
-        </div>
     </nav>
 
     <!-- navbar end -->
 
 
 
-    <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-            <div class="col image">
-                <img class="img1" src="{{url_for('static', filename='Images/Satyajeet.jpg')}}" alt="Satyajeet">
-                <div class="image-overlay">
-                    <div class="image-title">Satyajeet</div>
-                    <p class="image-description">
-                        Front-End Developer
-                    </p>
-                </div>
-            </div>
-            <div class="col image">
-                <img class="img2" src="{{url_for('static', filename='Images/Anshul.jpg')}}" alt="Anshul">
-                <div class="image-overlay">
-                    <div class="image-title">Anshul</div>
-                    <p class="image-description">
-                        Data Analysis and Analytics
-                    </p>
-                </div>
-            </div>
-            <div class="col">
-                <img class="img3" src="{{url_for('static', filename='Images/Shahil.jpg')}}" alt="Shahil">
-                <div class="image-overlay">
-                    <div class="image-title">Shahil</div>
-                    <p class="image-description">
-                        Backend Developer
-                    </p>
-                </div>
-            </div>
-            <div class="col">
-                <img class="img4" src="{{url_for('static', filename='Images/Shruti.jpg')}}" alt="Shruti">
-                <div class="image-overlay">
-                    <div class="image-title">Shruti</div>
-                    <p class="image-description">
-                        Cloud Deployer
-                    </p>
-                </div>
-            </div>
+    <div class="row hidden">
+        <div class="col-8">
+            <h2 class="main-title">G-Minor: A music recommendation system</h2>
+            <hr style="color: white;">
+            <p class="project-details">Music has always been an integral part of human lives, and
+                the current generation
+                is no exception.
+                Whether it's listening to upbeat tracks during a workout, romantic melodies during a date, or soothing
+                instrumentals
+                to unwind after
+                a long day, music plays an essential role in our daily lives. <br><br>
+
+                However, with countless songs and genres available on various music streaming platforms, it can be
+                overwhelming to find
+                the right track for a specific mood or situation. This is where G-Minor comes in. <br><br>
+
+                G-Minor is an innovative project that utilizes the latest advancements in image processing and computer
+                vision to help
+                users find the perfect song based on their current emotional state. By analyzing facial expressions
+                through video input,
+                G-Minor suggests songs from Spotify's top playlists that match the user's mood, allowing for a more
+                personalized and
+                effective music experience. <br><br>
+
+                Moreover, G-Minor is not just a technical marvel, but also a well-documented end-to-end project that
+                covers every aspect
+                from creation to deployment. This includes a user-friendly website that is designed to be easy to use
+                and intuitive,
+                ensuring a seamless and enjoyable experience for all users. <br><br>
+
+                In conclusion, G-Minor is a game-changing project that aims to revolutionize the way we interact with
+                music. By
+                leveraging cutting-edge technology and an intuitive user interface, G-Minor offers a more personalized
+                and effective
+                music experience, making it the go-to solution for all your music needs.</p>
+            <br>
+            <h2>FEATURES: </h2>
+            <hr style="color: white;">
+            <p>
+            <ul class="features hidden">
+                <li>Data Processing: The project preprocesses data from the Million Song Dataset, which is a large,
+                    freely-available dataset of audio
+                    features and metadata for a million songs.</li>
+                <li>
+                    Feature engineering : The project extracts audio features from the dataset such as tempo, key, and
+                    mode, and creates a
+                    feature vector for each song.
+                </li>
+                <li>Content-based filtering: The project also uses content-based filtering techniques to recommend songs
+                    based on audio
+                    features.</li>
+                <li>User interface: The project has a web-based user interface that allows users to input their
+                    preferences and receive
+                    music recommendations.</li>
+                <li>Technology stack: The project is written in Python and uses various libraries such as NumPy, Pandas,
+                    Flask, and
+                    Scikit-learn.</li>
+
+            </ul>
+            </p>
         </div>
+        <div class=" col-4 hidden">
+            <h3>OUR TEAM</h3>
+            <hr style="color: white; width: 50%; margin-left: 120px;">
+            <div>
+                <img class="img1" src="{{url_for('static', filename='Images/Anshul.jpg')}}" alt="Anshul">
+                <p class="anshul">ANSHUL DUBEY</p>
+            </div>
+            <div>
+                <img class="img2" src="{{url_for('static', filename='Images/Shruti.jpg')}}" alt="Shruti">
+                <p class="shruti">SHRUTI BHATTACHARYA</p>
+            </div>
+            <div>
+                <img class="img3" src="{{url_for('static', filename='Images/Shahil.jpg')}}" alt="Shahil">
+                <p class="shahil">SHAHIL SINGH YADAV</p>
+            </div>
+            <div>
+                <img class="img4" src="{{url_for('static', filename='Images/Satyajeet.jpg')}}" alt="Satyajeet">
+                <p class="satyajeet">SATYAJEET DAS</p>
+            </div>
+
+        </div>
+    </div>
     </div>
 
 
+    <script src="{{ url_for('static', filename='Js/home.js') }}"></script>
 </body>
 
 </html>

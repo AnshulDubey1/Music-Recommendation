@@ -1,0 +1,22 @@
+[2023-05-01 18:57:15,045] 186 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.5.170.168:8000
+[2023-05-01 18:57:15,045] 186 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2023-05-01 18:57:20,514] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:57:20] "GET / HTTP/1.1" 200 -
+[2023-05-01 18:57:20,605] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:57:20] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-05-01 18:57:20,671] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:57:20] "[36mGET /static/Images/Satyajeet.jpg HTTP/1.1[0m" 304 -
+[2023-05-01 18:57:20,676] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:57:20] "[36mGET /static/Images/Anshul.jpg HTTP/1.1[0m" 304 -
+[2023-05-01 18:57:20,683] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:57:20] "[36mGET /static/Images/Shahil.jpg HTTP/1.1[0m" 304 -
+[2023-05-01 18:57:20,684] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:57:20] "[36mGET /static/Images/Shruti.jpg HTTP/1.1[0m" 304 -
+[2023-05-01 18:57:20,885] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:57:20] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-01 18:57:22,148] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:57:22] "GET /index HTTP/1.1" 200 -
+[2023-05-01 18:57:22,221] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:57:22] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+[2023-05-01 18:57:25,267] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:57:25] "GET /cam HTTP/1.1" 200 -
+[2023-05-01 18:57:25,630] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:57:25] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-01 18:57:37,836] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:57:37] "POST /close_cam HTTP/1.1" 200 -
+[2023-05-01 18:57:38,011] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:57:38] "[36mGET /static/css/suggestion1.css HTTP/1.1[0m" 304 -
+[2023-05-01 18:57:38,134] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:57:38] "[36mGET /static/Js/suggestion1.js HTTP/1.1[0m" 304 -
+[2023-05-01 18:57:38,210] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:57:38] "GET /static/css/Images/background.jpg HTTP/1.1" 200 -
+[2023-05-01 18:57:38,621] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:57:38] "GET /favicon.ico HTTP/1.1" 200 -
+[2023-05-01 18:57:57,597] 186 werkzeug - INFO - 127.0.0.1 - - [01/May/2023 18:57:57] "GET /favicon.ico HTTP/1.1" 200 -
