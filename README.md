@@ -51,7 +51,7 @@ Music is a part of the daily lives of the current generation. But sometimes, it 
 
 # Exploratory Data Analysis 
 
-Link : [EDA Notebook](notebook\suggestion.ipynb)
+Link : [EDA Notebook](notebook/suggestion.ipynb)
 
 
 # Dependencies
