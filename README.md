@@ -23,7 +23,7 @@ Music is a part of the daily lives of the current generation. But sometimes, it 
 
 # Screenshot of UI
 
-<img src="screenshots\1.jpg" alt="Homepage"/>
+<img src="screenshots\1.png" alt="Homepage"/>
 <img src="screenshots\2.jpg" alt="Navbar"/>
 <img src="screenshots\3.jpg" alt="Camera"/>
 <img src="screenshots\4.jpg" alt="Suggestions"/>
